@@ -68,7 +68,7 @@
         NSString *contentTitle = NSLocalizedString(@"New Event",
                                                    @"notification title for new events");
 
-        NSString *bodyTemplate = NSLocalizedString(@"meet your friends at %@ for %@",
+        NSString *bodyTemplate = NSLocalizedString(@"Meet your friends at %@ for %@",
                                                    @"notification body for newly created events");
         NSString *contentBody = [NSString stringWithFormat:bodyTemplate,
                                  event.venueName,
