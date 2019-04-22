@@ -24,7 +24,7 @@
     if (!self) {
         return nil;
     }
-    self.dateString = [self dateStringFromDate:event.date];
+    self.dateString = [event.date dateString];
     self.title = event.name;
     self.isActive = event.isActive;
     if (![event.imageFileURLString isEqual:[NSNull null]]) {
@@ -43,19 +43,6 @@
     self.subtitle = [NSAttributedString attributedDetailsStringFromEvent:event];
 
     return self;
-}
-
-//MARK: - Time Representation
-
-- (NSString *)dateStringFromDate:(NSDate *)date {
-    NSString *relativeDate = date.relativeDayRepresentation;
-    if (relativeDate) {
-        return relativeDate;
-    } else if (date.isThisYear) {
-        return [date stringWithformat:@"MMM d"];
-    } else {
-        return [date stringWithformat:@"MMM d, yyyy"];
-    }
 }
 
 - (BOOL)directionsAreRelevantForEventWithDate:(NSDate *)date {

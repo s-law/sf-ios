@@ -109,4 +109,14 @@
     return [self isLaterThanDate:earlierDate] && [self isEarlierThanDate:laterDate];
 }
 
+- (NSString *)dateString {
+    NSString *relativeDate = self.relativeDayRepresentation;
+    if (relativeDate) {
+        return relativeDate;
+    } else if (self.isThisYear) {
+        return [self stringWithformat:@"MMM d"];
+    } else {
+        return [self stringWithformat:@"MMM d, yyyy"];
+    }
+}
 @end

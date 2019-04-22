@@ -9,6 +9,7 @@
 #import "EventDataSource.h"
 #import <UserNotifications/UserNotifications.h>
 #import "UNUserNotificationCenter+ConvenienceInitializer.h"
+#import "NSDate+Utilities.h"
 
 @interface BackgroundFetcher () <EventDataSourceDelegate>
 // The backgroundDataSource will tell us what if anything has changed
@@ -47,12 +48,13 @@
     NSInteger currentBadgeCount = [[UIApplication sharedApplication] applicationIconBadgeNumber];
 
     for (NSIndexPath *update in updates) {
-        NSString *contentTitle = NSLocalizedString(@"Coffee Events change",
+        NSString *contentTitle = NSLocalizedString(@"Coffee Event changed",
                                                    @"notification title for changed events");
         Event *event = [self.backgroundDataSource eventAtIndex:[update row]];
-        NSString *bodyTemplate = NSLocalizedString(@"%@ at %@ has changed. Find the latest info in app.",
-                                                   @"notification body: <Event name> at <venue name> has changed");
+        NSString *bodyTemplate = NSLocalizedString(@"%@'s %@ at %@ has changed. Find the latest info in app.",
+                                                   @"notification body: <Date>'s <Event name> at <venue name> has changed");
         NSString *contentBody = [NSString stringWithFormat:bodyTemplate,
+                                 [event.date dateString],
                                  event.name,
                                  event.venueName];
         UNUserNotificationCenter *notificationCenter = [UNUserNotificationCenter currentNotificationCenter];
@@ -65,12 +67,13 @@
     // This is a new event, it should have a nice alert.
     for (NSIndexPath *insert in insertions) {
         Event *event = [self.backgroundDataSource eventAtIndex:[insert row]];
-        NSString *contentTitle = NSLocalizedString(@"New Event",
+        NSString *contentTitle = NSLocalizedString(@"New Coffee Event",
                                                    @"notification title for new events");
 
-        NSString *bodyTemplate = NSLocalizedString(@"Meet your friends at %@ for %@",
+        NSString *bodyTemplate = NSLocalizedString(@"Meet your friends %@ at %@ for %@",
                                                    @"notification body for newly created events");
         NSString *contentBody = [NSString stringWithFormat:bodyTemplate,
+                                 [event.date dateString],
                                  event.venueName,
                                  event.name];
         UNUserNotificationCenter *notificationCenter = [UNUserNotificationCenter currentNotificationCenter];
