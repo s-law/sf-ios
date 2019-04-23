@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UserNotifications/UserNotifications.h>
 
 NS_ASSUME_NONNULL_BEGIN
 @interface NSNotification (ApplicationEventNotifications)
 
 @property (class, nonatomic, readonly) NSNotificationName applicationBecameActiveNotification;
+
++ (UNNotificationAttachment *)createWithIdentifier:(NSString *)string URL:(NSURL *)url;
 
 @end
 NS_ASSUME_NONNULL_END

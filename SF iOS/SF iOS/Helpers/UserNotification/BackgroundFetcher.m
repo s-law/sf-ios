@@ -9,6 +9,8 @@
 #import "EventDataSource.h"
 #import <UserNotifications/UserNotifications.h>
 #import "UNUserNotificationCenter+ConvenienceInitializer.h"
+#import "NSNotification+ApplicationEventNotifications.h"
+
 #import "NSDate+Utilities.h"
 
 @interface BackgroundFetcher () <EventDataSourceDelegate>
@@ -58,9 +60,21 @@
                                  event.name,
                                  event.venueName];
         UNUserNotificationCenter *notificationCenter = [UNUserNotificationCenter currentNotificationCenter];
-        [notificationCenter scheduleNotificationWithIdentifier:event.eventID
-                                                  contentTitle:contentTitle
-                                                   contentBody:contentBody];
+        NSError *error = nil;
+        UNNotificationAttachment *attachment = [NSNotification createWithIdentifier:event.eventID
+                                                                                URL:event.imageFileURL];
+        UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc] init];
+        content.body = contentBody;
+        content.title = contentTitle;
+        content.attachments = @[attachment];
+        UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:event.eventID
+                                                                              content:content
+                                                                              trigger:nil];
+        [notificationCenter addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
+            if (error != nil) {
+                NSLog(@"error %@", error);
+            }
+        }];
         currentBadgeCount++;
     }
 
@@ -77,6 +91,7 @@
                                  event.venueName,
                                  event.name];
         UNUserNotificationCenter *notificationCenter = [UNUserNotificationCenter currentNotificationCenter];
+
         [notificationCenter scheduleNotificationWithIdentifier:event.eventID
                                                   contentTitle:contentTitle
                                                    contentBody:contentBody];
