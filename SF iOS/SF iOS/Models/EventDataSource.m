@@ -14,6 +14,9 @@
 #import "FeedFetchService.h"
 #import <Realm/Realm.h>
 
+// Placeholder 2019-04-22
+static NSString *endpoint = @"https://coffeecoffeecoffee.coffee/api/groups/sf-ios-coffee/events";
+
 @interface EventDataSource ()
 
 @property (nonatomic, assign) EventType eventType;
@@ -21,6 +24,7 @@
 @property (nonatomic) FeedFetchService *service;
 @property (nonatomic) RLMNotificationToken *notificationToken;
 @property (nonatomic) RLMRealm *realm;
+@property (nonatomic, nullable) RLMRealmConfiguration *realmConfiguration;
 @end
 
 @implementation EventDataSource
@@ -62,7 +66,7 @@
 
 - (void)refresh {
     __weak typeof(self) welf = self;
-    [self.service getFeedWithHandler:^(NSArray<Event *> * _Nonnull feedFetchItems, NSError * _Nullable error) {
+    [self.service getFeedAtURLString:endpoint withHandler:^(NSArray<Event *> * _Nonnull feedFetchItems, NSError * _Nullable error) {
         if (error) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 [welf.delegate didFailToUpdateWithError:error];
@@ -70,7 +74,7 @@
             return;
         }
         // Persist your data easily
-        RLMRealm *realm = [RLMRealm defaultRealm];
+        RLMRealm *realm = (self.realmConfiguration != nil) ? [RLMRealm realmWithConfiguration:self.realmConfiguration error:nil] : [RLMRealm defaultRealm];
 
         // Fetch all existing events from the realm and map by {eventID : Event}
         NSMutableDictionary *existingEvents = [[NSMutableDictionary alloc] init];

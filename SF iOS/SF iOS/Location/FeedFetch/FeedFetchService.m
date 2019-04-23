@@ -21,8 +21,8 @@
     return self;
 }
 
--(void)getFeedWithHandler:(FeedFetchCompletionHandler)completionHandler {
-    FeedFetchOperation *operation = [[FeedFetchOperation alloc] initWithCompletionHandler:^(NSArray<NSDictionary *> *feed, NSError *_Nullable error) {
+-(void)getFeedAtURLString:(NSString*)endpoint withHandler:(FeedFetchCompletionHandler)completionHandler {
+    FeedFetchOperation *operation = [[FeedFetchOperation alloc] initWithURLString:endpoint withCompletionHandler:^(NSArray<NSDictionary *> *feed, NSError *_Nullable error) {
         NSMutableArray<Event *> *events = [[NSMutableArray alloc] initWithCapacity:feed.count];
         for (NSDictionary *dict in feed) {
             [events addObject:[[Event alloc] initWithDictionary:dict]];
