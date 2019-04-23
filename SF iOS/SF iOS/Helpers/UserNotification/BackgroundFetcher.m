@@ -7,8 +7,7 @@
 
 #import "BackgroundFetcher.h"
 #import "EventDataSource.h"
-#import <UserNotifications/UserNotifications.h>
-#import "UNUserNotificationCenter+ConvenienceInitializer.h"
+#import "UNUserNotificationCenter+EventNotifications.h"
 #import "NSDate+Utilities.h"
 #import "Analytics.h"
 
@@ -65,38 +64,20 @@
         if ([[event endDate] isInFuture] == NO) {
             continue;
         }
-        NSString *contentTitle = NSLocalizedString(@"Coffee Event changed",
-                                                   @"notification title for changed events");
-        
-        NSString *bodyTemplate = NSLocalizedString(@"%@'s %@ at %@ has changed. Find the latest info in app.",
-                                                   @"notification body: <Date>'s <Event name> at <venue name> has changed");
-        NSString *contentBody = [NSString stringWithFormat:bodyTemplate,
-                                 [event.date dateString],
-                                 event.name,
-                                 event.venueName];
-        UNUserNotificationCenter *notificationCenter = [UNUserNotificationCenter currentNotificationCenter];
-        [notificationCenter scheduleNotificationWithIdentifier:event.eventID
-                                                  contentTitle:contentTitle
-                                                   contentBody:contentBody];
+        [UNUserNotificationCenter scheduleLocalNotificationForEvent:event
+                                                               type:EventNotificationTypeChanged];
         currentBadgeCount++;
     }
 
     // This is a new event, it should have a nice alert.
     for (NSIndexPath *insert in insertions) {
         Event *event = [self.backgroundDataSource eventAtIndex:[insert row]];
-        NSString *contentTitle = NSLocalizedString(@"New Coffee Event",
-                                                   @"notification title for new events");
-
-        NSString *bodyTemplate = NSLocalizedString(@"Meet your friends %@ at %@ for %@",
-                                                   @"notification body for newly created events");
-        NSString *contentBody = [NSString stringWithFormat:bodyTemplate,
-                                 [event.date dateString],
-                                 event.venueName,
-                                 event.name];
-        UNUserNotificationCenter *notificationCenter = [UNUserNotificationCenter currentNotificationCenter];
-        [notificationCenter scheduleNotificationWithIdentifier:event.eventID
-                                                  contentTitle:contentTitle
-                                                   contentBody:contentBody];
+        // Prevent notifications if changes, e.g. images and URLs, are made to past events
+        if ([[event endDate] isInFuture] == NO) {
+            continue;
+        }
+        [UNUserNotificationCenter scheduleLocalNotificationForEvent:event
+                                                               type:EventNotificationTypeNew];
         currentBadgeCount++;
     }
 

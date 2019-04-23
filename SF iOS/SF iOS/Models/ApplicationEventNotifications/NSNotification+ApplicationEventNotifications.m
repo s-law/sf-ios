@@ -8,6 +8,7 @@
 
 #import "NSNotification+ApplicationEventNotifications.h"
 #import "UIApplication+Metadata.h"
+#import <UserNotifications/UserNotifications.h>
 @import UIKit;
 
 @implementation NSNotification (ApplicationEventNotifications)
