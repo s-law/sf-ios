@@ -11,7 +11,7 @@
 #import "UNUserNotificationCenter+ConvenienceInitializer.h"
 #import "NSDate+Utilities.h"
 
-@interface BackgroundFetcher () <EventDataSourceDelegate>
+@interface BackgroundFetcher () <FeedProviderDelegate>
 // The backgroundDataSource will tell us what if anything has changed
 @property (nonatomic) EventDataSource *backgroundDataSource;
 @property (nonatomic, copy) void (^backgroundCompletionBlock)(UIBackgroundFetchResult);
