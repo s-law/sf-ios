@@ -7,13 +7,11 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "EventDataSource.h"
-//#import "EventDataSource+Persistence.h"
+#import "EventDataSource+RealmConfiguration.h"
 #import <Realm/Realm.h>
 
-@interface EventDataSourceTests : XCTestCase   //<EventDataSourceDelegate>
-@property (nonatomic) RLMRealm *realmInstance;
-//@property (nonatomic) EventDataSource *dataSource;
+@interface EventDataSourceTests : XCTestCase <EventDataSourceDelegate>
+@property (nonatomic) EventDataSource *dataSource;
 @property (nonatomic) XCTestExpectation *fetchingExpectation;
 @end
 
@@ -23,36 +21,21 @@
     _fetchingExpectation = [self expectationWithDescription:@"Wait for events"];
 
     RLMRealmConfiguration *realmConfiguration = [RLMRealmConfiguration defaultConfiguration];
-
-    realmConfiguration.fileURL = [[[realmConfiguration.fileURL URLByDeletingLastPathComponent]
-                       URLByAppendingPathComponent:@"UnitTest"]
-                      URLByAppendingPathExtension:@"realm"];
     
     // In-memory Realms do not save data across app launches, but all other features of Realm will work as expected, including querying, relationships and thread-safety. This is a useful option if you need flexible data access without the overhead of disk persistence.
-//    [realmConfiguration setInMemoryIdentifier:@"UnitTest"];
+    [realmConfiguration setInMemoryIdentifier:@"UnitTest"];
 
     [RLMRealmConfiguration setDefaultConfiguration:realmConfiguration];
-
-    self.realmInstance = [RLMRealm realmWithConfiguration:realmConfiguration error:nil];
     
-    [self clearRealmDatabase];
-    /*
     self.dataSource = [[EventDataSource alloc] initWithEventType:EventTypeSFCoffee withRealmConfiguration:realmConfiguration];
     
     self.dataSource.delegate = self;
-    */
+    
     [super setUp];
 }
 
-- (void)clearRealmDatabase {
-    [self.realmInstance beginWriteTransaction];
-    [self.realmInstance deleteAllObjects];
-    [self.realmInstance commitWriteTransaction];
-}
-/*
 - (void)testFetchingCoffeeEvents {
     XCTAssertEqual(self.dataSource.numberOfEvents, 0);
-
     [self.dataSource refresh];
 
     [self waitForExpectationsWithTimeout:5.0 handler:^(NSError *error) {
@@ -73,6 +56,7 @@
 }
 
 - (void)willUpdateDataSource:(EventDataSource *)datasource {
+    //noop
 }
-*/
+
 @end
