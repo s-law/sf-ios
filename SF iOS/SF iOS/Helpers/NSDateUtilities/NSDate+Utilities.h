@@ -32,6 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)isLaterThanDate:(NSDate *)date;
 - (BOOL)isEarlierThanDate:(NSDate *)date;
 - (BOOL)isBetweenEarlierDate:(NSDate *)earlierDate laterDate:(NSDate *)laterDate;
+- (NSString *)dateString;
 
 @end
 NS_ASSUME_NONNULL_END
