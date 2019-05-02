@@ -26,6 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic) UserLocation *userLocationService;
 @property (nonatomic) UISearchBar *searchBar;
 @property (nonatomic) UIView *noResultsView;
+@property (nonatomic) UIButton *notificationSettingButton;
 @end
 NS_ASSUME_NONNULL_END
 
@@ -67,6 +68,30 @@ NS_ASSUME_NONNULL_END
     return self;
 }
 
+- (void)setupNotificationsButton {
+    UIImage *unsubscribedImage = [UIImage imageNamed:@"button - unsubscribed"];
+    UIImage *subscribedImage = [UIImage imageNamed:@"button - subscribed"];
+    self.notificationSettingButton = [[UIButton alloc] initWithFrame:CGRectZero];
+    [self.notificationSettingButton addTarget:self
+                                       action:@selector(notificationTapped:)
+                             forControlEvents:UIControlEventTouchUpInside];
+    [self.notificationSettingButton setImage:unsubscribedImage forState:UIControlStateNormal];
+    [self.notificationSettingButton setImage:subscribedImage forState:UIControlStateSelected];
+
+    self.notificationSettingButton.translatesAutoresizingMaskIntoConstraints = false;
+    [self.view addSubview:self.notificationSettingButton];
+    [self.notificationSettingButton.bottomAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.bottomAnchor
+                                                            constant:18].active = true;
+    [self.view.safeAreaLayoutGuide.rightAnchor constraintEqualToAnchor:self.notificationSettingButton.rightAnchor
+                                                              constant:18].active = true;
+    [self.notificationSettingButton.heightAnchor constraintEqualToConstant:44].active = true;
+    [self.notificationSettingButton.widthAnchor constraintEqualToConstant:44].active = true;
+}
+
+- (void)notificationTapped:(UIButton *)button {
+    NSLog(@"tapped the notification button");
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -99,6 +124,7 @@ NS_ASSUME_NONNULL_END
     [self registerForPreviewingWithDelegate:self sourceView:self.tableView];
     
     CGRect searchBarRect = CGRectMake(kSEARCHBARMARGIN, 0, self.view.frame.size.width-(kSEARCHBARMARGIN*2), kSEARCHBARHEIGHT);
+    [self setupNotificationsButton];
     self.searchBar = [[UISearchBar alloc] initWithFrame:searchBarRect];
     self.searchBar.searchBarStyle = UISearchBarStyleMinimal;
     self.searchBar.placeholder = NSLocalizedString(@"Filter", @"Prompt to search for event names. Here, `Filter` is a joke in English because people filter coffee and this list can be filtered by a term.");
