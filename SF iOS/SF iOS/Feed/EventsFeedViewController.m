@@ -90,6 +90,22 @@ NS_ASSUME_NONNULL_END
 
 - (void)notificationTapped:(UIButton *)button {
     NSLog(@"tapped the notification button");
+    NSString *buttonTitle = NSLocalizedString(@"Turn on notifications",
+                                              @"Turn on notifications action sheet button");
+    NSString *cancelButtonTitle = NSLocalizedString(@"Cancel", @"Cancel");
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil
+                                                                   message:nil
+                                                            preferredStyle:UIAlertControllerStyleActionSheet];
+    [alert addAction:[UIAlertAction actionWithTitle:buttonTitle
+                                              style:UIAlertActionStyleDefault
+                                            handler:^(UIAlertAction * _Nonnull action) {
+                                                NSLog(@"tapped action sheet button");
+                                            }]];
+
+    [alert addAction:[UIAlertAction actionWithTitle:cancelButtonTitle
+                                              style:UIAlertActionStyleCancel
+                                            handler:nil]];
+    [self presentViewController:alert animated:true completion:nil];
 }
 
 - (void)viewDidLoad {
