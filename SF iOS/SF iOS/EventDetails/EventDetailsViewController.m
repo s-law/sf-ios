@@ -64,7 +64,8 @@ NS_ASSUME_NONNULL_END
     titleLabel.text = self.event.name;
     titleLabel.font = [UIFont systemFontOfSize:28 weight:UIFontWeightSemibold];
     titleLabel.textColor = [UIColor blackColor];
-    
+    titleLabel.numberOfLines = 0;
+
     UILabel *subtitleLabel = [UILabel new];
     subtitleLabel.font = [UIFont systemFontOfSize:13 weight:UIFontWeightSemibold];
     subtitleLabel.textColor = [UIColor abbey];
@@ -125,6 +126,17 @@ NS_ASSUME_NONNULL_END
     
     [self.mapView setDestinationToLocation:self.event.location.location withAnnotationGlyph:self.event.annotationGlyph];
     [self getTravelTimes];
+}
+
+- (NSArray<id<UIPreviewActionItem>> *)previewActionItems {
+    NSString *copyActionTitle = NSLocalizedString(@"Copy Address", @"");
+    UIPreviewAction *copyAction = [UIPreviewAction actionWithTitle:copyActionTitle
+                                                             style:UIPreviewActionStyleDefault
+                                                           handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
+                                                               NSString *addressString = self.event.location.streetAddress;
+                                                               [[UIPasteboard generalPasteboard] setString:addressString];
+                                                           }];
+    return @[copyAction];
 }
 
 // MARK: - Travel Times

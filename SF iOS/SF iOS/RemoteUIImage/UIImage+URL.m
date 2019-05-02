@@ -18,15 +18,21 @@
     }
 
     [queue addOperationWithBlock:^{
-        NSData *data = [NSData dataWithContentsOfURL:fileURL];
-        UIImage *image = nil;
-        if (data) {
-            image = [UIImage imageWithData:data];
-        }
+        NSURLSession *sharedSession = [NSURLSession sharedSession];
+        NSURLRequest *request = [[NSURLRequest alloc] initWithURL:fileURL
+                                                      cachePolicy:NSURLRequestReturnCacheDataElseLoad
+                                                  timeoutInterval:30];
         
-        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-            completionHandler(image, nil);
-        }];
+        [[sharedSession dataTaskWithRequest:request
+                         completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+            UIImage *image = nil;
+            if (data) {
+                image = [UIImage imageWithData:data];
+            }
+            [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                completionHandler(image, nil);
+            }];
+        }] resume];
     }];
 }
 
