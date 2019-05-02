@@ -10,7 +10,6 @@
 
 
 - (instancetype)initWithURLString:(NSString*)endpoint withCompletionHandler:(FeedCompletion)completionHandler {
-//    NSString *endpoint = @"https://coffeecoffeecoffee.coffee/api/groups/sf-ios-coffee/events";
     NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:endpoint]];
     request.HTTPMethod = @"GET";
     [request addValue:@"en_US" forHTTPHeaderField:@"Accept-Language"];
