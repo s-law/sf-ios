@@ -26,25 +26,28 @@
     [self setInteger:directionsProvider forKey:self.SFIOS_directionsProviderKey];
 }
 
-- (void)setNotificationSetting:(BOOL)isOn forGroup:(Group *)group {
+- (void)setNotificationSetting:(BOOL)isOn forGroup:(nonnull Group *)group {
     NSNumber *newValue = [NSNumber numberWithBool:isOn];
     NSString *key = self.SFIOS_notifiationsDictionaryKey;
+    // TODO until group interactions are merged in this is always sf-ios-coffee
+    NSString *groupID = @"28ef50f9-b909-4f03-9a69-a8218a8cbd99";// group.groupID;
     NSMutableDictionary<NSString *, NSNumber *> *settingsDictionary = [[self dictionaryForKey:key] mutableCopy];
     if (settingsDictionary == nil) {
         settingsDictionary = [[NSMutableDictionary<NSString *, NSNumber *> alloc] initWithObjectsAndKeys:newValue,
-                              group.groupID,
+                              groupID,
                               nil];
     } else {
-        [settingsDictionary setObject:newValue forKey:group.groupID];
+        [settingsDictionary setObject:newValue forKey:groupID];
     }
     [self setObject:settingsDictionary forKey:key];
 }
 
 
-- (BOOL)notificationSettingForGroup:(Group *)group {
+- (BOOL)notificationSettingForGroup:(nonnull Group *)group {
+    // TODO until group interactions are merged in this is always sf-ios-coffee
+    NSString *groupID = @"28ef50f9-b909-4f03-9a69-a8218a8cbd99";// group.groupID;
     NSDictionary *settingsDictionary = [self dictionaryForKey:self.SFIOS_notifiationsDictionaryKey];
-    return [[settingsDictionary valueForKey:group.groupID] boolValue];
-    return [self boolForKey:group.groupID];
+    return [[settingsDictionary valueForKey:groupID] boolValue];
 }
 
 @end

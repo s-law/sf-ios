@@ -10,7 +10,6 @@
 #import "NSNotification+ApplicationEventNotifications.h"
 #import "SwipableNavigationContainer.h"
 #import "BackgroundFetcher.h"
-#import <UserNotifications/UserNotifications.h>
 
 @interface AppDelegate ()
 @property (nonatomic) SwipableNavigationContainer *navigationContainer;
@@ -25,11 +24,6 @@
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    UNUserNotificationCenter *notificationCenter = [UNUserNotificationCenter currentNotificationCenter];
-    UNAuthorizationOptions options = UNAuthorizationOptionAlert|UNAuthorizationOptionBadge|UNAuthorizationOptionSound;
-    [notificationCenter requestAuthorizationWithOptions:options
-                                      completionHandler:^(BOOL granted, NSError *error){}];
-
     [self setSharedNetworkCacheMemoryMegabytes:5
                                  diskMegabytes:25];
     [application setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];

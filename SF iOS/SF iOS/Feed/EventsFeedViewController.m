@@ -14,6 +14,8 @@
 #import "UIViewController+StatusBarBackground.h"
 #import "UIImage+URL.h"
 #import "ImageStore.h"
+#import "NSUserDefaults+Settings.h"
+#import <UserNotifications/UserNotifications.h>
 
 NS_ASSUME_NONNULL_BEGIN
 @interface EventsFeedViewController () <EventDataSourceDelegate, UITableViewDataSource, UITableViewDelegate, UIViewControllerPreviewingDelegate, UISearchBarDelegate>
@@ -89,18 +91,56 @@ NS_ASSUME_NONNULL_END
 }
 
 - (void)notificationTapped:(UIButton *)button {
-    NSLog(@"tapped the notification button");
-    NSString *buttonTitle = NSLocalizedString(@"Turn on notifications",
-                                              @"Turn on notifications action sheet button");
+    BOOL isNotificationSet = [[NSUserDefaults standardUserDefaults] notificationSettingForGroup:nil];
+    NSString *buttonTitle;
+    if (isNotificationSet) {
+        buttonTitle = NSLocalizedString(@"Turn off notifications",
+                                        @"Turn off notifications action sheet button");
+    } else {
+        buttonTitle = NSLocalizedString(@"Turn on notifications",
+                                        @"Turn on notifications action sheet button");
+    }
     NSString *cancelButtonTitle = NSLocalizedString(@"Cancel", @"Cancel");
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil
                                                                    message:nil
                                                             preferredStyle:UIAlertControllerStyleActionSheet];
+
+    void (^notificationsPreferenceChangeTapped)(UIAlertAction * _Nonnull) = ^void(UIAlertAction * _Nonnull action) {
+
+        // if notifications are turned on, set them to off
+        if (isNotificationSet) {
+            [[NSUserDefaults standardUserDefaults] setNotificationSetting:FALSE
+                                                                 forGroup:nil];
+            [self updateNotificationButton];
+        }
+        // if notifications are turned off, request permissions
+        // only if they are granted do we update the setting
+        else {
+            UNUserNotificationCenter *notificationCenter = [UNUserNotificationCenter currentNotificationCenter];
+            UNAuthorizationOptions options = UNAuthorizationOptionAlert|UNAuthorizationOptionBadge|UNAuthorizationOptionSound;
+            __weak typeof(self) welf = self;
+
+            [notificationCenter requestAuthorizationWithOptions:options
+                                              completionHandler:^(BOOL granted, NSError *error){
+                                                  // Not a very robust error handling solution here
+                                                  if (error) {
+                                                      NSLog(@"Error %@", error);
+                                                  }
+                                                  // if they've granted perms, update the setting, notify UI
+                                                  if (granted) {
+                                                      [[NSUserDefaults standardUserDefaults] setNotificationSetting:!isNotificationSet
+                                                                                                           forGroup:nil];
+                                                      // This hits UI so we must dispatch on main queue
+                                                      dispatch_async(dispatch_get_main_queue(), ^{
+                                                          [welf updateNotificationButton];
+                                                      });
+                                                  }
+                                              }];
+        };
+    };
     [alert addAction:[UIAlertAction actionWithTitle:buttonTitle
                                               style:UIAlertActionStyleDefault
-                                            handler:^(UIAlertAction * _Nonnull action) {
-                                                NSLog(@"tapped action sheet button");
-                                            }]];
+                                            handler:notificationsPreferenceChangeTapped]];
 
     [alert addAction:[UIAlertAction actionWithTitle:cancelButtonTitle
                                               style:UIAlertActionStyleCancel
@@ -175,6 +215,16 @@ NS_ASSUME_NONNULL_END
     [self addStatusBarBlurBackground];
 
     [self.dataSource refresh];
+}
+
+- (void)updateNotificationButton {
+    BOOL isNotificationSet = [[NSUserDefaults standardUserDefaults] notificationSettingForGroup:nil];
+    [self.notificationSettingButton setSelected:isNotificationSet];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self updateNotificationButton];
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
