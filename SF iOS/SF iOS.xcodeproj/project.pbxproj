@@ -11,6 +11,7 @@
 		19DD32F5225B294900C0EE5A /* NSUserDefaults+Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DD32F4225B294900C0EE5A /* NSUserDefaults+Settings.m */; };
 		19DD32F8225EFC6100C0EE5A /* SwipableNavigationContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DD32F7225EFC6100C0EE5A /* SwipableNavigationContainer.m */; };
 		19DD32FB225EFE9700C0EE5A /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DD32F9225EFE9700C0EE5A /* SettingsViewController.m */; };
+		5F0DE173227CA592003467DC /* SettingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0DE172227CA592003467DC /* SettingsTests.m */; };
 		5F175B992267D2BA00246C08 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F175B982267D2BA00246C08 /* Group.m */; };
 		5F175B9B2267D47E00246C08 /* GroupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F175B9A2267D47E00246C08 /* GroupTests.m */; };
 		5F175B9F2267D6F200246C08 /* GroupFetchOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F175B9E2267D6F200246C08 /* GroupFetchOperation.m */; };
@@ -107,6 +108,7 @@
 		19DD32F9225EFE9700C0EE5A /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		19DD32FA225EFE9700C0EE5A /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		238F3C1035E918F044128123 /* libPods-SF iOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SF iOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F0DE172227CA592003467DC /* SettingsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsTests.m; sourceTree = "<group>"; };
 		5F175B972267D2BA00246C08 /* Group.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
 		5F175B982267D2BA00246C08 /* Group.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
 		5F175B9A2267D47E00246C08 /* GroupTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupTests.m; sourceTree = "<group>"; };
@@ -539,6 +541,7 @@
 				5F175B9A2267D47E00246C08 /* GroupTests.m */,
 				5F313559227A4D1F00751CE5 /* UNNotificationContentTests.m */,
 				5F31355E227A5F7000751CE5 /* EventNotificationCopyTests.m */,
+				5F0DE172227CA592003467DC /* SettingsTests.m */,
 			);
 			path = "SF iOSTests";
 			sourceTree = "<group>";
@@ -965,6 +968,7 @@
 			files = (
 				C86DD43D1F3A4DFD00C58723 /* TravelTime+ArrivalTests.m in Sources */,
 				C82516481F2FF293006B9D7E /* FeedItemTests.m in Sources */,
+				5F0DE173227CA592003467DC /* SettingsTests.m in Sources */,
 				C897CD111F37B78200E6C2A6 /* DateTests.m in Sources */,
 				5FECEFD9224EE87D00AA8A25 /* EventTests.m in Sources */,
 				5F31355A227A4D1F00751CE5 /* UNNotificationContentTests.m in Sources */,

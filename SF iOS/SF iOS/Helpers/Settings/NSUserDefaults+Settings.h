@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+@class Group;
 
 typedef NS_ENUM(NSInteger, SettingsDirectionProvider) {
     SettingsDirectionProviderApple,
@@ -16,4 +17,11 @@ typedef NS_ENUM(NSInteger, SettingsDirectionProvider) {
 
 @property (nonatomic, assign, readwrite) SettingsDirectionProvider directionsProvider;
 
+- (void)setNotificationSetting:(BOOL)isOn forGroup:(Group *)group;
+
+/**
+ * Returns the group specific push notifications setting
+ * @return BOOL true indicating that the user wants to receive pushes for this group, false otherwise
+ */
+- (BOOL)notificationSettingForGroup:(Group *)group;
 @end
