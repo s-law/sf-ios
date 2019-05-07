@@ -145,6 +145,8 @@ NS_ASSUME_NONNULL_END
     [alert addAction:[UIAlertAction actionWithTitle:cancelButtonTitle
                                               style:UIAlertActionStyleCancel
                                             handler:nil]];
+
+    button.hidden = true;
     [self presentViewController:alert animated:true completion:nil];
 }
 
@@ -220,6 +222,8 @@ NS_ASSUME_NONNULL_END
 - (void)updateNotificationButton {
     BOOL isNotificationSet = [[NSUserDefaults standardUserDefaults] notificationSettingForGroup:nil];
     [self.notificationSettingButton setSelected:isNotificationSet];
+    [self.notificationSettingButton setHidden:false];
+
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -426,7 +430,7 @@ static CGFloat const eventCellAspectRatio = 1.352;
         [alert dismissViewControllerAnimated:true completion:nil];
     }];
     [alert addAction:okAction];
-    
+
     [self presentViewController:alert animated:true completion:nil];
 }
 
