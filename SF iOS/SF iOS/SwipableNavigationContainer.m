@@ -6,23 +6,27 @@
 //
 
 #import "SwipableNavigationContainer.h"
+
+#import "AffogatoStyle.h"
+#import "ChildViewControllerForwardingNavigationController.h"
+#import "ChildViewControllerForwardingPageViewController.h"
+#import "EspressoStyle.h"
 #import "EventDataSource.h"
 #import "EventsFeedViewController.h"
 #import "EventsFeedTableView.h"
-#import "SettingsViewController.h"
+#import "Group.h"
 #import "GroupCollectionViewController.h"
 #import "GroupDataSource.h"
+#import "MochaStyle.h"
+#import "SettingsViewController.h"
+#import "Styleable.h"
 #import "NSUserDefaults+Settings.h"
-#import "Group.h"
-
-// TODO copy pasted
-#define kSEARCHBARHEIGHT 32
 
 @interface SwipableNavigationContainer () <UIPageViewControllerDataSource, GroupCollectionViewControllerDelegate>
 
 @property (nonatomic) EventDataSource *dataSource;
 @property (nonatomic) UIPageViewController *pageViewController;
-@property (nonatomic) UINavigationController *mainNav;
+@property (nonatomic) UINavigationController *navigationController;
 @property (nonatomic, copy) NSArray *pageViewControllers;
 @end
 
@@ -34,49 +38,58 @@
 
     CGRect bounds = [[UIScreen mainScreen] bounds];
     _window = [[UIWindow alloc] initWithFrame:bounds];
-    _window.backgroundColor = [UIColor whiteColor];
 
-    _pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll
-                                                          navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal
-                                                                        options:@{}];
-    _pageViewController.doubleSided = YES;
-    _pageViewController.dataSource = self;
+    _navigationController = [[ChildViewControllerForwardingNavigationController alloc] init];
 
-    GroupDataSource *groupDataSource = [[GroupDataSource alloc] init];
-    GroupCollectionViewController *groupViewController = [[GroupCollectionViewController alloc] initWithDataSource:groupDataSource];
-    groupDataSource.delegate = groupViewController;
-    groupViewController.selectionDelegate = self;
-
-    self.mainNav = [[UINavigationController alloc] init];
+	GroupDataSource *groupDataSource = [[GroupDataSource alloc] init];
+	GroupCollectionViewController *groupViewController = [[GroupCollectionViewController alloc] initWithDataSource:groupDataSource];
+	groupDataSource.delegate = groupViewController;
+	groupViewController.selectionDelegate = self;
 
     NSArray <UIViewController *> *viewControllers;
     NSString *groupID = [[NSUserDefaults standardUserDefaults] lastViewedGroupID];
     if (groupID) {
         Group *lastSelectedGroup = [groupDataSource groupWithID:groupID];
         UIViewController *listViewController = [self viewControllerForGroup:lastSelectedGroup];
-        viewControllers = @[groupViewController, listViewController];
+        viewControllers = @[ groupViewController, listViewController ];
     } else {
-        viewControllers = @[groupViewController];
+        viewControllers = @[ groupViewController ];
     }
 
-    [self.mainNav setViewControllers:viewControllers];
-    self.mainNav.navigationBar.tintColor = [UIColor blackColor];
-    [self.mainNav setNavigationBarHidden:false animated:false];
-    [self.mainNav.navigationBar setPrefersLargeTitles:true];
-    
-    [_pageViewController setViewControllers:@[self.mainNav]
+	_navigationController.viewControllers = viewControllers;
+	_navigationController.navigationBar.prefersLargeTitles = YES;
+	[_navigationController setNavigationBarHidden:NO animated:NO];
+
+	_pageViewController = [[ChildViewControllerForwardingPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll
+																					 navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal
+																								   options:@{}];
+	_pageViewController.doubleSided = YES;
+	_pageViewController.dataSource = self;
+    [_pageViewController setViewControllers:@[ _navigationController ]
                                   direction:UIPageViewControllerNavigationDirectionForward
                                    animated:NO
                                  completion:nil];
+	_pageViewControllers = @[ [[SettingsViewController alloc] init], _navigationController ];
 
-    _pageViewControllers = @[
-        [SettingsViewController new],
-        self.mainNav
-    ];
+	id<Style> style = [self _styleFromIdentifier:NSUserDefaults.standardUserDefaults.activeStyleIdentifier];
+	_window.backgroundColor = style.colors.backgroundColor;
+	_window.tintColor = style.colors.tintColor;
+	[self _applyStyle:style toViewControllers:@[ _pageViewController, _navigationController ]];
 
     _window.rootViewController = _pageViewController;
 
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userDefaultsDidChange:) name:NSUserDefaultsDidChangeNotification object:nil];
+
     return self;
+}
+
+#pragma mark - NSNotifications
+
+- (void)userDefaultsDidChange:(NSNotification *)notification {
+	id<Style> style = [self _styleFromIdentifier:NSUserDefaults.standardUserDefaults.activeStyleIdentifier];
+	self.window.backgroundColor = style.colors.backgroundColor;
+	self.window.tintColor = style.colors.tintColor;
+	[self _applyStyle:style toViewControllers:@[ self.pageViewController, self.navigationController ]];
 }
 
 #pragma mark - UIPageViewControllerDataSource
@@ -87,7 +100,12 @@
         return nil;
     }
 
-    return self.pageViewControllers[index - 1];
+    UIViewController *previousViewController = self.pageViewControllers[index - 1];
+	id<Style> style = [self _styleFromIdentifier:NSUserDefaults.standardUserDefaults.activeStyleIdentifier];
+
+	[self _applyStyle:style toViewControllers:@[ previousViewController ]];
+
+	return previousViewController;
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
@@ -96,19 +114,65 @@
         return nil;
     }
 
-    return self.pageViewControllers[index + 1];
+	UIViewController *nextViewController = self.pageViewControllers[index + 1];
+	id<Style> style = [self _styleFromIdentifier:NSUserDefaults.standardUserDefaults.activeStyleIdentifier];
+
+	[self _applyStyle:style toViewControllers:@[ nextViewController ]];
+
+	return nextViewController;
 }
 
+#pragma mark - Groups
+
 - (void)controller:(nonnull GroupCollectionViewController *)controller tappedGroup:(nonnull Group *)group {
-     [self.mainNav pushViewController:[self viewControllerForGroup:group]
-                            animated:true];
+	[self.navigationController pushViewController:[self viewControllerForGroup:group]
+										 animated:true];
 }
 
 - (UIViewController *)viewControllerForGroup:(Group *)group {
     UITableView *tableView = [[EventsFeedTableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     EventDataSource *dataSource = [[EventDataSource alloc] initWithGroup:group];
     [dataSource refresh];
-    return [[EventsFeedViewController alloc] initWithDataSource:dataSource
+
+	return [[EventsFeedViewController alloc] initWithDataSource:dataSource
                                                       tableView:tableView];
 }
+
+#pragma mark -
+
+- (id<Style>)_styleFromIdentifier:(NSString *)identifier {
+	if ([identifier isEqualToString:EspressoStyle.identifier]) {
+		return [[EspressoStyle alloc] init];
+	}
+
+	if ([identifier isEqualToString:AffogatoStyle.identifier]) {
+		return [[AffogatoStyle alloc] init];
+	}
+
+	if ([identifier isEqualToString:MochaStyle.identifier]) {
+		return [[MochaStyle alloc] init];
+	}
+
+	// If no style is selected, fall back to looking at the interface style if possible (>= iOS 12).
+	if (@available(iOS 12.0, *)) {
+		if (self.window.traitCollection.userInterfaceStyle == UIUserInterfaceStyleDark) {
+			return [[MochaStyle alloc] init];
+		}
+	}
+
+	return [[AffogatoStyle alloc] init];
+}
+
+- (void)_applyStyle:(id<Style>)style toViewControllers:(NSArray<UIViewController *> *)viewControllers {
+	for (UIViewController *viewController in viewControllers) {
+		if (![viewController conformsToProtocol:@protocol(Styleable)]) {
+			continue;
+		}
+
+		id<Styleable> styleable = (id<Styleable>)viewController;
+		[styleable applyStyle:style];
+	}
+}
+
+
 @end
