@@ -23,7 +23,7 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        self.groups = [Group allObjects];
+        self.groups = [[Group allObjects] sortedResultsUsingKeyPath:@"name" ascending:false];
         self.service = [[GroupFetchService alloc] init];
         [self observeAppActivationEvents];
         self.realm = [RLMRealm defaultRealm];
