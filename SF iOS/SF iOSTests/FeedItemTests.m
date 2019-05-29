@@ -9,6 +9,7 @@
 #import <XCTest/XCTest.h>
 #import "Event.h"
 #import "FeedItem.h"
+#import "NSDate+Utilities.h"
 
 @interface FeedItemTests : XCTestCase
 
@@ -38,7 +39,7 @@
                            @"venue": venue,
                            @"start_at": @"2019-04-03T15:30:00.000Z"
                            };
-    self.event = [[Event alloc] initWithDictionary:dict];
+    self.event = [[Event alloc] initWithDictionary:dict dateFormatter:[NSDate formatter]];
     self.event.type = EventTypeSFCoffee;
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     self.noon = [calendar dateBySettingHour:12 minute:0 second:0 ofDate:[NSDate date] options:0];

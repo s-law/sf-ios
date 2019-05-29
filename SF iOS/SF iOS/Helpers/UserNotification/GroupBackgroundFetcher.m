@@ -51,7 +51,6 @@
 
     __weak typeof(self) welf = self;
     for (Group *group in groups) {
-        NSString *groupName = group.name;
         dispatch_group_enter(dipatchGroup);
         BackgroundFetcher *fetcher = [[BackgroundFetcher alloc] initForGroup:group withCompletionHandler:^(UIBackgroundFetchResult result) {
             switch (result) {
