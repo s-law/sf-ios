@@ -1,1 +1,4 @@
+Added a style selector so you can have your Cherry Mocha or your Affogato or your Espresso
+Notifications are per group
+Fixed a few bugs and crashes
 
