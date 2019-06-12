@@ -1,0 +1,1345 @@
+[
+    {
+        "id":"1bb5cc2e-7a80-4c43-aa91-a04fd16070cc",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"WWDC Decompression",
+        "image_url":"https://fastly.4sqi.net/img/general/612x612/37799673_wa4SzoZPsNNJKmAQDXrQEBADnR9TG22uEtIU3d3uPZc.jpg",
+        "start_at":"2019-06-12T15:30:00.000Z",
+        "end_at":"2019-06-12T17:00:00.000Z",
+        "venue":{
+            "name":"Stable Cafe",
+            "location":{
+                "formatted_address":"2128 Folsom St (btwn 17th \u0026 18th St), San Francisco, CA 94110, United States",
+                "latitude":37.763233,
+                "longitude":-122.415262
+            },
+            "url":"https://foursquare.com/v/49b1a93df964a520d9521fe3"
+        }
+    },
+    {
+        "id":"8b28ac40-f1f4-46d0-a7d7-bb72b981a307",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Let's talk about SwiftUI",
+        "image_url":"https://fastly.4sqi.net/img/general/1920x1440/1813137_rq4SOxBcFrA5dDk78TTL4el_6fF7silESFxV3rq0DD0.jpg",
+        "start_at":"2019-06-05T15:30:00.000Z",
+        "end_at":"2019-06-05T17:00:00.000Z",
+        "venue":{
+            "name":"Equator Coffees \u0026 Teas",
+            "location":{
+                "formatted_address":"986 Market St (at 6th St), San Francisco, CA 94102, United States",
+                "latitude":37.78259750945642,
+                "longitude":-122.41021782159805
+            },
+            "url":"https://foursquare.com/v/550080fb498e3b394ebc6c9c"
+        }
+    },
+    {
+        "id":"90983c1a-eb26-4c75-8e8a-fcfe5ea6d2c9",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"WWDC warmup",
+        "image_url":"https://fastly.4sqi.net/img/general/1439x1920/535536_MtdRo9mRxVfI_KnHQLBQddCR4M6VTUX1icsjFHJ9cto.jpg",
+        "start_at":"2019-05-29T15:30:00.000Z",
+        "end_at":"2019-05-29T17:00:00.000Z",
+        "venue":{
+            "name":"Blue Bottle Coffee",
+            "location":{
+                "formatted_address":"1355 Market St Ste 190 (at 10th St), San Francisco, CA 94103, United States",
+                "latitude":37.77628641647586,
+                "longitude":-122.41686701774597
+            },
+            "url":"https://foursquare.com/v/5560dbdb498e91a2bcde84f6"
+        }
+    },
+    {
+        "id":"e473b3cb-a25a-439a-8e3b-14544d53156e",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Andytown is open early now!",
+        "image_url":"https://fastly.4sqi.net/img/general/1438x1920/558158_hSxQoKS3SIss-OUduxm_4KKgV15DBXczVI2rem4u6Eo.jpg",
+        "start_at":"2019-05-22T15:30:00.000Z",
+        "end_at":"2019-05-22T17:00:00.000Z",
+        "venue":{
+            "name":"Andytown Coffee Roasters",
+            "location":{
+                "formatted_address":"181 Fremont St, San Francisco, CA 94105, United States",
+                "latitude":37.78975243030006,
+                "longitude":-122.39543483856865
+            },
+            "url":"https://foursquare.com/v/5b69d2dc911fc4002c70bdb8"
+        }
+    },
+    {
+        "id":"abb8ad4e-cce1-420b-a0a7-2488e97f1278",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Ritual Rain check",
+        "image_url":"https://fastly.4sqi.net/img/general/612x612/327259_6ULKGf6GE0hCODVXakplFwyOBxEX-eV8zIVfT9854bk.jpg",
+        "start_at":"2019-05-15T15:30:00.000Z",
+        "end_at":"2019-05-15T17:00:00.000Z",
+        "venue":{
+            "name":"Ritual Coffee Roasters",
+            "location":{
+                "formatted_address":"1026 Valencia St (btwn 21st \u0026 Hill St), San Francisco, CA 94110, United States",
+                "latitude":37.756434706964484,
+                "longitude":-122.42123114208677
+            },
+            "url":"https://foursquare.com/v/42853f80f964a5200c231fe3"
+        }
+    },
+    {
+        "id":"95a3a8ee-4aa4-4356-9429-cd71d6d0f8cd",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Mission Coffee",
+        "image_url":"https://fastly.4sqi.net/img/general/720x720/1923785_UgcIW1SUPUOIOv-dv2kMFq-ZrZrMnT0QLCrsSCOKhIs.jpg",
+        "start_at":"2019-05-08T15:30:00.000Z",
+        "end_at":"2019-05-08T17:00:00.000Z",
+        "venue":{
+            "name":"Haus Coffee",
+            "location":{
+                "formatted_address":"3086 24th St (at Folsom St), San Francisco, CA 94110, United States",
+                "latitude":37.752584274302066,
+                "longitude":-122.41365815417876
+            },
+            "url":"https://foursquare.com/v/4a188a97f964a520c5791fe3"
+        }
+    },
+    {
+        "id":"d6e5ba98-1719-4e46-b33a-f0f854be6697",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"South Park: It’s gonna be May",
+        "image_url":"https://fastly.4sqi.net/img/general/1920x1440/2261218_FBIhkFupzGB_35eYIbhRazhmY-tqN0kIAYObF7GlKhs.jpg",
+        "start_at":"2019-05-01T15:30:00.000Z",
+        "end_at":"2019-05-01T17:00:00.000Z",
+        "venue":{
+            "name":"Blue Bottle Coffee",
+            "location":{
+                "formatted_address":"2 South Park, San Francisco, CA 94107, United States",
+                "latitude":37.78249688302822,
+                "longitude":-122.39298243819015
+            },
+            "url":"https://foursquare.com/v/582352764972292ad70ec0bd"
+        }
+    },
+    {
+        "id":"05a1adea-bbbd-4b7f-b261-b69abfe6ad43",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Freddie’s first selection ☕️",
+        "image_url":"https://fastly.4sqi.net/img/general/1425x1900/29717788_wuJg0yl9CS5EP4EUieKpL3I3y3ZYvalJsyG7w3VBcNQ.jpg",
+        "start_at":"2019-04-24T15:30:00.000Z",
+        "end_at":"2019-04-24T17:00:00.000Z",
+        "venue":{
+            "name":"Blue Bottle Coffee",
+            "location":{
+                "formatted_address":"168 2nd St (between Natoma St and Howard St), San Francisco, CA 94105, United States",
+                "latitude":37.787122463028524,
+                "longitude":-122.39877778381862
+            },
+            "url":"https://foursquare.com/v/5c3384fbacc5f5002c89a62c"
+        }
+    },
+    {
+        "id":"e3f5df9a-aa42-4ed5-8658-8343de8b55d1",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Special Guest: Mergesort is here ✅",
+        "image_url":"https://fastly.4sqi.net/img/general/1900x1333/6361367_yMxWrxSVTObiUg5rfYvRcQflM4Pvz2FZpUSgSRvhHP0.jpg",
+        "start_at":"2019-04-17T15:30:00.000Z",
+        "end_at":"2019-04-17T17:00:00.000Z",
+        "venue":{
+            "name":"Saint Frank",
+            "location":{
+                "formatted_address":"1081 Mission St (7th), San Francisco, CA 94103, United States",
+                "latitude":37.77951880012043,
+                "longitude":-122.41043187684741
+            },
+            "url":"https://foursquare.com/v/5964f126b3d8e2739960e1af"
+        }
+    },
+    {
+        "id":"56892637-fee3-4c24-b13d-045338e75170",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Vive La Tarte 🥐",
+        "image_url":"https://fastly.4sqi.net/img/general/1440x1440/2371535_KHZPh_eMeoeZ3lkH8fvVxGogUTRoqh04MtkGcLDjoz4.jpg",
+        "start_at":"2019-04-10T15:30:00.000Z",
+        "end_at":"2019-04-10T17:00:00.000Z",
+        "venue":{
+            "name":"Vive La Tarte",
+            "location":{
+                "formatted_address":"1160 Howard St (at 8th St), San Francisco, CA 94103, United States",
+                "latitude":37.77701166643817,
+                "longitude":-122.41089851840502
+            },
+            "url":"https://foursquare.com/v/55554f0a498e7ffc6883325c"
+        }
+    },
+    {
+        "id":"adb7eb98-ed48-4d09-8eba-2f3acec9cf64",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Four Barrel Coffee",
+        "image_url":"https://fastly.4sqi.net/img/general/720x537/mIIPSQkw8mreYwS5STIU3srMXddR2rQD56uzvcEL7n4.jpg",
+        "start_at":"2019-04-03T15:30:00.000Z",
+        "end_at":"2019-04-03T17:00:00.000Z",
+        "venue":{
+            "name":"Four Barrel Coffee",
+            "location":{
+                "formatted_address":"375 Valencia St (btwn 14th St \u0026 15th St), San Francisco, CA 94103, United States",
+                "latitude":37.767012532041115,
+                "longitude":-122.42201032995501
+            },
+            "url":"https://foursquare.com/v/480d1a5ef964a520284f1fe3"
+        }
+    },
+    {
+        "id":"4347a30a-e67b-4d2d-bc0a-f4168db34bc7",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Still new-ish Blue Bottle",
+        "image_url":"https://fastly.4sqi.net/img/general/1440x1920/11102861_a3KBDgG8et5XXUmBcxwMOO8DcJmgP3MusQcuxWKlEdM.jpg",
+        "start_at":"2019-03-27T15:30:00.000Z",
+        "end_at":"2019-03-27T17:00:00.000Z",
+        "venue":{
+            "name":"Blue Bottle Coffee",
+            "location":{
+                "formatted_address":"168 2nd St (between Natoma St and Howard St), San Francisco, CA 94105, United States",
+                "latitude":37.787122463028524,
+                "longitude":-122.39877778381862
+            },
+            "url":"https://foursquare.com/v/5c3384fbacc5f5002c89a62c"
+        }
+    },
+    {
+        "id":"2a523bce-b39d-4d2b-a4d8-960f670d2e4d",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"The GDC Special starring MGS",
+        "image_url":"https://fastly.4sqi.net/img/general/640x640/10631493_V-utMVO-4rlF4SXcSQViNX-5wF0VoIFJP8sxq4KUxbc.jpg",
+        "start_at":"2019-03-21T16:00:00.000Z",
+        "end_at":"2019-03-20T17:00:00.000Z",
+        "venue":{
+            "name":"Mazarine Coffee",
+            "location":{
+                "formatted_address":"720 Market St (btwn O'Farrell \u0026 Kearny St), San Francisco, CA 94102, United States",
+                "latitude":37.78745542538577,
+                "longitude":-122.40384241107367
+            },
+            "url":"https://foursquare.com/v/547cac4d498ecfcb0018b838"
+        }
+    },
+    {
+        "id":"d058f149-6fd6-465e-b6df-ca1787b7b644",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"BlueBottle: Ferry Building edition",
+        "image_url":"https://fastly.4sqi.net/img/general/1440x1920/25425707_e_V0-80VvhrA-uMYx09Q7D44sr7w_D_RdgNfGEoLsbk.jpg",
+        "start_at":"2019-03-20T15:30:00.000Z",
+        "end_at":"2019-03-20T17:00:00.000Z",
+        "venue":{
+            "name":"Blue Bottle Coffee Kiosk",
+            "location":{
+                "formatted_address":"Ferry Building, San Francisco, CA 94111, United States",
+                "latitude":37.795691,
+                "longitude":-122.393896
+            },
+            "url":"https://foursquare.com/v/521cf6af11d21968a3ce3498"
+        }
+    },
+    {
+        "id":"82f898d4-98fd-41df-b37c-8b8efd5d83b5",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Sightglass in SOMA",
+        "image_url":"https://fastly.4sqi.net/img/general/612x612/6210237_YSD5U_kNDQhIxBpDrt2b-1S5-5QJZ3GAH_C2l1wLWTE.jpg",
+        "start_at":"2019-03-13T15:30:00.000Z",
+        "end_at":"2019-03-13T17:00:00.000Z",
+        "venue":{
+            "name":"Sightglass Coffee",
+            "location":{
+                "formatted_address":"270 7th St (btwn Howard \u0026 Folsom St), San Francisco, CA 94103, United States",
+                "latitude":37.77700097623915,
+                "longitude":-122.40851927201014
+            },
+            "url":"https://foursquare.com/v/4a4b8a43f964a5206fac1fe3"
+        }
+    },
+    {
+        "id":"4aa58ca8-a215-41ae-b262-5a99b9adabbd",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Verve coffee for hope",
+        "image_url":"https://fastly.4sqi.net/img/general/960x960/50707264_rFSjPdxgll6nzdPicKyaBm3tD7TtesEL0q13keZiTvw.jpg",
+        "start_at":"2019-03-06T16:30:00.000Z",
+        "end_at":"2019-03-06T18:00:00.000Z",
+        "venue":{
+            "name":"Verve Coffee Roasters",
+            "location":{
+                "formatted_address":"2101 Market St (at Church St), San Francisco, CA 94114, United States",
+                "latitude":37.767121,
+                "longitude":-122.429152
+            },
+            "url":"https://foursquare.com/v/589f6a4372714f7d35566b6a"
+        }
+    },
+    {
+        "id":"c04eb30b-9a2a-4c1f-93e4-7282dc8ef6b4",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Contraband in SOMA",
+        "image_url":"https://fastly.4sqi.net/img/general/1425x1900/34510087_ISxLI87yJZ_Rl1UJPs39OVEUoi7RKFBZk_5FzNBUdKU.jpg",
+        "start_at":"2019-02-27T16:30:00.000Z",
+        "end_at":"2019-02-27T18:00:00.000Z",
+        "venue":{
+            "name":"Contraband Coffee Bar",
+            "location":{
+                "formatted_address":"260 5th St (5th And Clementina), San Francisco, CA 94103, United States",
+                "latitude":37.780701680131706,
+                "longitude":-122.40408922289538
+            },
+            "url":"https://foursquare.com/v/58780cf39e35d31224af6dcb"
+        }
+    },
+    {
+        "id":"6da25b25-4098-4d96-990d-d2cb2825b8af",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Blue Bottle at Market Square",
+        "image_url":"https://fastly.4sqi.net/img/general/1439x1920/535536_MtdRo9mRxVfI_KnHQLBQddCR4M6VTUX1icsjFHJ9cto.jpg",
+        "start_at":"2019-02-20T16:30:00.000Z",
+        "end_at":"2019-02-20T18:00:00.000Z",
+        "venue":{
+            "name":"Blue Bottle Coffee",
+            "location":{
+                "formatted_address":"1355 Market St Ste 190 (at 10th St), San Francisco, CA 94103, United States",
+                "latitude":37.77628641647586,
+                "longitude":-122.41686701774597
+            },
+            "url":"https://foursquare.com/v/5560dbdb498e91a2bcde84f6"
+        }
+    },
+    {
+        "id":"267ecb1f-c594-4de8-8670-ed4da2d9844f",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Andytown's new place",
+        "image_url":"https://fastly.4sqi.net/img/general/1440x1920/18175517_ok1msrFZvSclJ2hLBmd3bKg4G3im5GnO6qrB0OpvHAs.jpg",
+        "start_at":"2019-02-13T17:00:00.000Z",
+        "end_at":"2019-02-13T18:00:00.000Z",
+        "venue":{
+            "name":"Andytown Coffee Roasters",
+            "location":{
+                "formatted_address":"181 Fremont St, San Francisco, CA 94105, United States",
+                "latitude":37.78975243030006,
+                "longitude":-122.39543483856865
+            },
+            "url":"https://foursquare.com/v/5b69d2dc911fc4002c70bdb8"
+        }
+    },
+    {
+        "id":"74b24951-bb4b-425a-8760-16d7901f8ea0",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"New Vive La Tarte in Noe",
+        "image_url":"https://fastly.4sqi.net/img/general/1416x1920/23858685_Z-6ISUcHrFlKkoZhQLdHQsvll8bqF0rxKxsuIowaQd8.jpg",
+        "start_at":"2019-02-06T16:30:00.000Z",
+        "end_at":"2019-02-06T18:00:00.000Z",
+        "venue":{
+            "name":"Vive La Tarte",
+            "location":{
+                "formatted_address":"4026 24th St (Noe), San Francisco, CA 94114, United States",
+                "latitude":37.751489,
+                "longitude":-122.432519
+            },
+            "url":"https://foursquare.com/v/5c4c85f14f0e58002cd2bdc6"
+        }
+    },
+    {
+        "id":"a0b901c3-b996-476c-9166-0d02d3328dbf",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"St Frank",
+        "image_url":"https://fastly.4sqi.net/img/general/1900x1333/6361367_yMxWrxSVTObiUg5rfYvRcQflM4Pvz2FZpUSgSRvhHP0.jpg",
+        "start_at":"2019-01-30T16:30:00.000Z",
+        "end_at":"2019-01-30T18:00:00.000Z",
+        "venue":{
+            "name":"Saint Frank",
+            "location":{
+                "formatted_address":"1081 Mission St (7th), San Francisco, CA 94103, United States",
+                "latitude":37.77951880012043,
+                "longitude":-122.41043187684741
+            },
+            "url":"https://foursquare.com/v/5964f126b3d8e2739960e1af"
+        }
+    },
+    {
+        "id":"ca318b5e-b616-44fa-b7b7-8b98c81d9e54",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"The new Blue Bottle on 2nd",
+        "image_url":"https://fastly.4sqi.net/img/general/1440x1920/63683526_BRuxu00KroDeLmnuMU8incBykYVGRR56vXuiBo0qf_I.jpg",
+        "start_at":"2019-01-23T16:30:00.000Z",
+        "end_at":"2019-01-23T18:00:00.000Z",
+        "venue":{
+            "name":"Blue Bottle Coffee",
+            "location":{
+                "formatted_address":"168 2nd St, San Francisco, CA 94105, United States",
+                "latitude":37.787047,
+                "longitude":-122.398841
+            },
+            "url":"https://foursquare.com/v/5c3384fbacc5f5002c89a62c"
+        }
+    },
+    {
+        "id":"43c0540e-7e89-409e-ada5-213a7a3092f6",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Ritual Valencia",
+        "image_url":"https://fastly.4sqi.net/img/general/612x612/327259_6ULKGf6GE0hCODVXakplFwyOBxEX-eV8zIVfT9854bk.jpg",
+        "start_at":"2019-01-16T16:30:00.000Z",
+        "end_at":"2019-01-16T18:00:00.000Z",
+        "venue":{
+            "name":"Ritual Coffee Roasters",
+            "location":{
+                "formatted_address":"1026 Valencia St (btwn 21st \u0026 Hill St), San Francisco, CA 94110, United States",
+                "latitude":37.756501,
+                "longitude":-122.421146
+            },
+            "url":"https://foursquare.com/v/42853f80f964a5200c231fe3"
+        }
+    },
+    {
+        "id":"5df91d76-5694-4e83-b975-9b2933cc3af0",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Vive La Tarte with Ethan's Dad",
+        "image_url":"https://fastly.4sqi.net/img/general/1440x1440/2371535_KHZPh_eMeoeZ3lkH8fvVxGogUTRoqh04MtkGcLDjoz4.jpg",
+        "start_at":"2019-01-09T16:30:00.000Z",
+        "end_at":"2019-01-09T18:00:00.000Z",
+        "venue":{
+            "name":"Vive La Tarte",
+            "location":{
+                "formatted_address":"1160 Howard St (at 8th St), San Francisco, CA 94103, United States",
+                "latitude":37.77701166643817,
+                "longitude":-122.41089851840502
+            },
+            "url":"https://foursquare.com/v/55554f0a498e7ffc6883325c"
+        }
+    },
+    {
+        "id":"f4883bb1-56b8-429d-b34c-ebe254c8a721",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Surprise Monday Inaugural Blue Bottle",
+        "image_url":null,
+        "start_at":"2019-01-07T22:10:00.000Z",
+        "end_at":"2019-01-07T23:00:00.000Z",
+        "venue":{
+            "name":"Blue Bottle Coffee",
+            "location":{
+                "formatted_address":"168 2nd St, San Francisco, CA 94105, United States",
+                "latitude":37.787047,
+                "longitude":-122.398841
+            },
+            "url":"https://foursquare.com/v/5c3384fbacc5f5002c89a62c"
+        }
+    },
+    {
+        "id":"994be2a9-3770-46af-8841-1e8970723cdd",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"First ☕️ of 2019 @ Saint Frank on Mission",
+        "image_url":"https://fastly.4sqi.net/img/general/1900x1333/6361367_yMxWrxSVTObiUg5rfYvRcQflM4Pvz2FZpUSgSRvhHP0.jpg",
+        "start_at":"2019-01-02T16:30:00.000Z",
+        "end_at":"2018-12-31T18:00:00.000Z",
+        "venue":{
+            "name":"Saint Frank",
+            "location":{
+                "formatted_address":"1081 Mission St (7th), San Francisco, CA 94103, United States",
+                "latitude":37.77951880012043,
+                "longitude":-122.41043187684741
+            },
+            "url":"https://foursquare.com/v/5964f126b3d8e2739960e1af"
+        }
+    },
+    {
+        "id":"c3e44964-8ba5-4e71-8e92-ff5834594e9a",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Blue Bottle Market Square",
+        "image_url":"https://fastly.4sqi.net/img/general/1439x1920/535536_MtdRo9mRxVfI_KnHQLBQddCR4M6VTUX1icsjFHJ9cto.jpg",
+        "start_at":"2018-12-19T16:30:00.000Z",
+        "end_at":"2018-12-19T18:00:00.000Z",
+        "venue":{
+            "name":"Blue Bottle Coffee",
+            "location":{
+                "formatted_address":"1355 Market St Ste 190 (at 10th St), San Francisco, CA 94103, United States",
+                "latitude":37.77628641647586,
+                "longitude":-122.41686701774597
+            },
+            "url":"https://foursquare.com/v/5560dbdb498e91a2bcde84f6"
+        }
+    },
+    {
+        "id":"f9217de7-73f8-47db-962e-a7612051f640",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Sextant Coffee Roasters",
+        "image_url":"https://fastly.4sqi.net/img/general/960x720/542692_U0cvdxODn1x8TyoNfiBKaJOQ27UOQ0Y91AB7Ul1Ych8.jpg",
+        "start_at":"2018-12-12T16:30:00.000Z",
+        "end_at":"2018-12-12T17:00:00.000Z",
+        "venue":{
+            "name":"Sextant Coffee Roasters",
+            "location":{
+                "formatted_address":"1415 Folsom St (btwn 10th St \u0026 Juniper St), San Francisco, CA 94103, United States",
+                "latitude":37.77259658096878,
+                "longitude":-122.41298083852901
+            },
+            "url":"https://foursquare.com/v/536c170f498e257eb7c70999"
+        }
+    },
+    {
+        "id":"5b0c6008-b0b3-45fc-a912-109188f30e5d",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"☃Holiday Party: Local Edition",
+        "image_url":"https://fastly.4sqi.net/img/general/960x720/48748_RwnU1N8E9ylPkIwHGcBrnUHsqnREpFUU7T8EKOpR770.jpg",
+        "start_at":"2018-12-12T02:00:00.000Z",
+        "end_at":"2018-12-12T05:00:00.000Z",
+        "venue":{
+            "name":"Local Edition",
+            "location":{
+                "formatted_address":"691 Market St (at 3rd St), San Francisco, CA 94105, United States",
+                "latitude":37.78766655851561,
+                "longitude":-122.40343548642822
+            },
+            "url":"https://foursquare.com/v/4f7e77bfe4b0b58904177146"
+        }
+    },
+    {
+        "id":"9d92e1fe-8684-42a2-91a1-2bb616b8bb96",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Blue Bottle South Park",
+        "image_url":"https://fastly.4sqi.net/img/general/1920x1440/2261218_FBIhkFupzGB_35eYIbhRazhmY-tqN0kIAYObF7GlKhs.jpg",
+        "start_at":"2018-12-05T16:30:00.000Z",
+        "end_at":"2018-12-05T18:00:00.000Z",
+        "venue":{
+            "name":"Blue Bottle Coffee",
+            "location":{
+                "formatted_address":"2 South Park, San Francisco, CA 94107, United States",
+                "latitude":37.78249688302822,
+                "longitude":-122.39298243819015
+            },
+            "url":"https://foursquare.com/v/582352764972292ad70ec0bd"
+        }
+    },
+    {
+        "id":"aeb8b9a9-d275-40f5-9e2f-736f987596cc",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Vive La Tarte with Matt Whittaker",
+        "image_url":"https://fastly.4sqi.net/img/general/1440x1440/2371535_KHZPh_eMeoeZ3lkH8fvVxGogUTRoqh04MtkGcLDjoz4.jpg",
+        "start_at":"2018-11-28T16:30:00.000Z",
+        "end_at":"2018-11-28T18:00:00.000Z",
+        "venue":{
+            "name":"Vive La Tarte",
+            "location":{
+                "formatted_address":"1160 Howard St (at 8th St), San Francisco, CA 94103, United States",
+                "latitude":37.77701166643817,
+                "longitude":-122.41089851840502
+            },
+            "url":"https://foursquare.com/v/55554f0a498e7ffc6883325c"
+        }
+    },
+    {
+        "id":"ba792214-0392-4e5c-ad99-9cee321ea90c",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Coffee Bar (Mariposa St)",
+        "image_url":"https://fastly.4sqi.net/img/general/612x612/38434107_k-VsBY7sffgOl4Vh1XlJMX5QhiJGvIvxUqsgM9UVwbc.jpg",
+        "start_at":"2018-11-21T16:30:00.000Z",
+        "end_at":"2018-11-21T18:00:00.000Z",
+        "venue":{
+            "name":"Coffee Bar",
+            "location":{
+                "formatted_address":"1890 Bryant St (btwn Mariposa St. \u0026 Florida St.), San Francisco, CA 94110, United States",
+                "latitude":37.76312402977745,
+                "longitude":-122.41099834442139
+            },
+            "url":"https://foursquare.com/v/47fde9f4f964a520df4e1fe3"
+        }
+    },
+    {
+        "id":"0c16c8c9-9d2a-4fa2-be19-7ad21767cc1f",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Contraband",
+        "image_url":"https://fastly.4sqi.net/img/general/1440x1920/1031177_uPdfmDvOfGvRpKFjWHwmKAzIjNj6zcmhw5BGGc5PF2s.jpg",
+        "start_at":"2018-11-14T16:30:00.000Z",
+        "end_at":"2018-11-14T18:00:00.000Z",
+        "venue":{
+            "name":"Contraband Coffee Bar",
+            "location":{
+                "formatted_address":"260 5th St (5th And Clementina), San Francisco, CA 94103, United States",
+                "latitude":37.780701680131706,
+                "longitude":-122.40408922289538
+            },
+            "url":"https://foursquare.com/v/58780cf39e35d31224af6dcb"
+        }
+    },
+    {
+        "id":"2366f54d-bbe5-4180-9ce0-60596e9b6e46",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Special Xtra",
+        "image_url":"https://fastly.4sqi.net/img/general/1440x1440/46976084_vv2BsOaWOiD2gAVQbAsr50L4Pkz0Bv7Tc0kf572bGMw.jpg",
+        "start_at":"2018-11-07T16:30:00.000Z",
+        "end_at":"2018-11-07T18:00:00.000Z",
+        "venue":{
+            "name":"Special Xtra",
+            "location":{
+                "formatted_address":"138 Minna St (New Montgomery St), San Francisco, CA 94105, United States",
+                "latitude":37.7868864522843,
+                "longitude":-122.40028581726182
+            },
+            "url":"https://foursquare.com/v/538d010a498e71342055358c"
+        }
+    },
+    {
+        "id":"0a39f550-b204-4876-806f-3518c51f8112",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Spooky Saint Frank(enstein)",
+        "image_url":"https://fastly.4sqi.net/img/general/1900x1333/6361367_yMxWrxSVTObiUg5rfYvRcQflM4Pvz2FZpUSgSRvhHP0.jpg",
+        "start_at":"2018-10-31T15:30:00.000Z",
+        "end_at":"2018-10-31T17:00:00.000Z",
+        "venue":{
+            "name":"Saint Frank",
+            "location":{
+                "formatted_address":"1081 Mission St (7th), San Francisco, CA 94103, United States",
+                "latitude":37.77951880012043,
+                "longitude":-122.41043187684741
+            },
+            "url":"https://foursquare.com/v/5964f126b3d8e2739960e1af"
+        }
+    },
+    {
+        "id":"c4d1bbcb-c3e0-4f72-9a12-d956ccc990a0",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Four Barrel Coffee",
+        "image_url":"https://fastly.4sqi.net/img/general/720x537/mIIPSQkw8mreYwS5STIU3srMXddR2rQD56uzvcEL7n4.jpg",
+        "start_at":"2018-10-24T15:30:00.000Z",
+        "end_at":"2018-10-24T17:00:00.000Z",
+        "venue":{
+            "name":"Four Barrel Coffee",
+            "location":{
+                "formatted_address":"375 Valencia St (btwn 14th St \u0026 15th St), San Francisco, CA 94103, United States",
+                "latitude":37.76702438676065,
+                "longitude":-122.42195860692624
+            },
+            "url":"https://foursquare.com/v/480d1a5ef964a520284f1fe3"
+        }
+    },
+    {
+        "id":"e5c31705-b642-43ce-93c8-3e77a7a2945b",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Mazarine - Best Coffee, FYI It's Roderic's Birthday",
+        "image_url":"https://fastly.4sqi.net/img/general/640x640/10631493_V-utMVO-4rlF4SXcSQViNX-5wF0VoIFJP8sxq4KUxbc.jpg",
+        "start_at":"2018-10-17T15:30:00.000Z",
+        "end_at":"2018-10-17T17:00:00.000Z",
+        "venue":{
+            "name":"Mazarine Coffee",
+            "location":{
+                "formatted_address":"720 Market St (btwn O'Farrell \u0026 Kearny St), San Francisco, CA 94102, United States",
+                "latitude":37.78745542538577,
+                "longitude":-122.40384241107367
+            },
+            "url":"https://foursquare.com/v/547cac4d498ecfcb0018b838"
+        }
+    },
+    {
+        "id":"92173d67-e710-40fe-b88b-5179e2e7f6eb",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Verve Coffee Roasters",
+        "image_url":"https://fastly.4sqi.net/img/general/960x960/50707264_rFSjPdxgll6nzdPicKyaBm3tD7TtesEL0q13keZiTvw.jpg",
+        "start_at":"2018-10-10T15:30:00.000Z",
+        "end_at":"2018-10-10T17:00:00.000Z",
+        "venue":{
+            "name":"Verve Coffee Roasters",
+            "location":{
+                "formatted_address":"2101 Market St (at Church St), San Francisco, CA 94114, United States",
+                "latitude":37.767121,
+                "longitude":-122.429152
+            },
+            "url":"https://foursquare.com/v/589f6a4372714f7d35566b6a"
+        }
+    },
+    {
+        "id":"47787aad-ea7f-4957-baeb-418d58f28616",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Dynamo Donut \u0026 Coffee",
+        "image_url":"https://fastly.4sqi.net/img/general/612x612/7EUTAjMgnr8tvWCaDy1R2tru9QsLA0991dQo9Rx6kC8.jpg",
+        "start_at":"2018-10-03T15:30:00.000Z",
+        "end_at":"2018-10-03T17:00:00.000Z",
+        "venue":{
+            "name":"Dynamo Donut \u0026 Coffee",
+            "location":{
+                "formatted_address":"2760 24th St (at Hampshire St), San Francisco, CA 94110, United States",
+                "latitude":37.75293720591394,
+                "longitude":-122.40762570234537
+            },
+            "url":"https://foursquare.com/v/49ccf971f964a520a6591fe3"
+        }
+    },
+    {
+        "id":"2381a77e-a806-4c13-b918-035c4b138106",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Sightglass Coffee",
+        "image_url":"https://fastly.4sqi.net/img/general/612x612/6210237_YSD5U_kNDQhIxBpDrt2b-1S5-5QJZ3GAH_C2l1wLWTE.jpg",
+        "start_at":"2018-09-26T15:30:00.000Z",
+        "end_at":"2018-09-26T17:00:00.000Z",
+        "venue":{
+            "name":"Sightglass Coffee",
+            "location":{
+                "formatted_address":"270 7th St (btwn Howard \u0026 Folsom St), San Francisco, CA 94103, United States",
+                "latitude":37.77702490373948,
+                "longitude":-122.40852980833175
+            },
+            "url":"https://foursquare.com/v/4a4b8a43f964a5206fac1fe3"
+        }
+    },
+    {
+        "id":"dd779520-739b-4b34-bdb1-1a3773d9b468",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Saint Frank",
+        "image_url":"https://fastly.4sqi.net/img/general/1900x1333/6361367_yMxWrxSVTObiUg5rfYvRcQflM4Pvz2FZpUSgSRvhHP0.jpg",
+        "start_at":"2018-09-19T15:30:00.000Z",
+        "end_at":"2018-09-19T17:00:00.000Z",
+        "venue":{
+            "name":"Saint Frank",
+            "location":{
+                "formatted_address":"1081 Mission St (7th), San Francisco, CA 94103, United States",
+                "latitude":37.77951880012043,
+                "longitude":-122.41043187684741
+            },
+            "url":"https://foursquare.com/v/5964f126b3d8e2739960e1af"
+        }
+    },
+    {
+        "id":"a604e4c1-794d-47df-b4ae-585f7ea16273",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Red Door, 111 Minna St",
+        "image_url":"https://fastly.4sqi.net/img/general/960x720/3414310_ip80SP-pVJd-BA3gL6Nxb8csAfos5p-pFgOCNfz3y3k.jpg",
+        "start_at":"2018-09-12T15:30:00.000Z",
+        "end_at":"2018-09-12T16:29:00.000Z",
+        "venue":{
+            "name":"Red Door Coffee",
+            "location":{
+                "formatted_address":"111 Minna St (2nd St.), San Francisco, CA 94105, United States",
+                "latitude":37.78751985485642,
+                "longitude":-122.39926954816234
+            },
+            "url":"https://foursquare.com/v/5150b7c78aca1877ec109926"
+        }
+    },
+    {
+        "id":"6b0c16ad-974c-4695-8705-9733ba5235fa",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Red Door / Transbay Terminal",
+        "image_url":"https://fastly.4sqi.net/img/general/1920x1440/20560910_V7K-fdRUY8fYCYSMyT6bct5Ghai0EFmMVytdae0q3QA.jpg",
+        "start_at":"2018-09-05T15:30:00.000Z",
+        "end_at":"2018-09-05T17:00:00.000Z",
+        "venue":{
+            "name":"Red Door Coffee",
+            "location":{
+                "formatted_address":"505 Howard St (1st St), San Francisco, CA 94105, United States",
+                "latitude":37.78816214897159,
+                "longitude":-122.39601666747147
+            },
+            "url":"https://foursquare.com/v/5473ada4498e5d7a1971dc74"
+        }
+    },
+    {
+        "id":"7adba8af-f8af-4081-b6e5-07dd797e4503",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Vive La Tarte - SOMA",
+        "image_url":"https://fastly.4sqi.net/img/general/1440x1440/2371535_KHZPh_eMeoeZ3lkH8fvVxGogUTRoqh04MtkGcLDjoz4.jpg",
+        "start_at":"2018-08-29T15:30:00.000Z",
+        "end_at":"2018-08-29T17:00:00.000Z",
+        "venue":{
+            "name":"Vive La Tarte",
+            "location":{
+                "formatted_address":"1160 Howard St (at 8th St), San Francisco, CA 94103, United States",
+                "latitude":37.77701166643817,
+                "longitude":-122.41089851840502
+            },
+            "url":"https://foursquare.com/v/55554f0a498e7ffc6883325c"
+        }
+    },
+    {
+        "id":"ca880252-19d9-4f80-a574-3115ac567441",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Blue Bottle Market Square",
+        "image_url":"https://fastly.4sqi.net/img/general/1439x1920/535536_MtdRo9mRxVfI_KnHQLBQddCR4M6VTUX1icsjFHJ9cto.jpg",
+        "start_at":"2018-08-22T15:30:00.000Z",
+        "end_at":"2018-08-22T17:00:00.000Z",
+        "venue":{
+            "name":"Blue Bottle Coffee",
+            "location":{
+                "formatted_address":"1355 Market St Ste 190 (at 10th St), San Francisco, CA 94103, United States",
+                "latitude":37.77628641647586,
+                "longitude":-122.41686701774597
+            },
+            "url":"https://foursquare.com/v/5560dbdb498e91a2bcde84f6"
+        }
+    },
+    {
+        "id":"29373d9f-e95f-476b-88e7-ae57d00b4938",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Four Barrel Coffee",
+        "image_url":"https://fastly.4sqi.net/img/general/720x537/mIIPSQkw8mreYwS5STIU3srMXddR2rQD56uzvcEL7n4.jpg",
+        "start_at":"2018-08-15T15:30:00.000Z",
+        "end_at":"2018-08-15T17:00:00.000Z",
+        "venue":{
+            "name":"Four Barrel Coffee",
+            "location":{
+                "formatted_address":"375 Valencia St (btwn 14th St \u0026 15th St), San Francisco, CA 94103, United States",
+                "latitude":37.76702438676065,
+                "longitude":-122.42195860692624
+            },
+            "url":"https://foursquare.com/v/480d1a5ef964a520284f1fe3"
+        }
+    },
+    {
+        "id":"4f39f6ca-c223-4d9d-89cb-6f207ce3b3a2",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"The Point",
+        "image_url":"https://fastly.4sqi.net/img/general/1920x1440/90976_2WCaGtI9SACqUL3Fvq3qNw_8mJYNzeUD7WpRvkLOuJY.jpg",
+        "start_at":"2018-08-08T15:30:00.000Z",
+        "end_at":"2018-08-08T17:00:00.000Z",
+        "venue":{
+            "name":"The Point",
+            "location":{
+                "formatted_address":"505 Brannan St, San Francisco, CA 94107, United States",
+                "latitude":37.77783067257143,
+                "longitude":-122.39705100858961
+            },
+            "url":"https://foursquare.com/v/5a788999491be712e2878069"
+        }
+    },
+    {
+        "id":"7335a327-9210-4ab7-b396-8ff331fae920",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Contraband Soma",
+        "image_url":"https://fastly.4sqi.net/img/general/1440x1920/1031177_uPdfmDvOfGvRpKFjWHwmKAzIjNj6zcmhw5BGGc5PF2s.jpg",
+        "start_at":"2018-08-01T15:30:00.000Z",
+        "end_at":"2018-08-01T17:00:00.000Z",
+        "venue":{
+            "name":"Contraband Coffee Bar",
+            "location":{
+                "formatted_address":"260 5th St (5th And Clementina), San Francisco, CA 94103, United States",
+                "latitude":37.780701680131706,
+                "longitude":-122.40408922289538
+            },
+            "url":"https://foursquare.com/v/58780cf39e35d31224af6dcb"
+        }
+    },
+    {
+        "id":"9092eda9-c103-4560-b0b1-2024f56d6c98",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Ferry Building (BB, VLT, etc.)",
+        "image_url":"https://fastly.4sqi.net/img/general/1440x1920/7302002_6HBHoslcDnWrAWkU9c6hZu5nyrbTYhLe0he0xZGuBXQ.jpg",
+        "start_at":"2018-07-25T15:30:00.000Z",
+        "end_at":"2018-07-25T17:00:00.000Z",
+        "venue":{
+            "name":"Blue Bottle Coffee",
+            "location":{
+                "formatted_address":"1 Ferry Building Ste 7 (at The Embarcardero), San Francisco, CA 94111, United States",
+                "latitude":37.79590475625579,
+                "longitude":-122.39393759555746
+            },
+            "url":"https://foursquare.com/v/49d68c61f964a520e65c1fe3"
+        }
+    },
+    {
+        "id":"5ae0c80a-767f-497e-a22d-45e9f00139ab",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Red Door Coffee",
+        "image_url":"https://fastly.4sqi.net/img/general/1920x1440/20560910_V7K-fdRUY8fYCYSMyT6bct5Ghai0EFmMVytdae0q3QA.jpg",
+        "start_at":"2018-07-18T15:30:00.000Z",
+        "end_at":"2018-07-18T17:00:00.000Z",
+        "venue":{
+            "name":"Red Door Coffee",
+            "location":{
+                "formatted_address":"505 Howard St (1st St), San Francisco, CA 94105, United States",
+                "latitude":37.78816214897159,
+                "longitude":-122.39601666747147
+            },
+            "url":"https://foursquare.com/v/5473ada4498e5d7a1971dc74"
+        }
+    },
+    {
+        "id":"7d79701a-7a9a-43a4-aba8-a5a2cfa2b147",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Coffee Bar",
+        "image_url":"https://fastly.4sqi.net/img/general/612x612/38434107_k-VsBY7sffgOl4Vh1XlJMX5QhiJGvIvxUqsgM9UVwbc.jpg",
+        "start_at":"2018-07-11T15:30:00.000Z",
+        "end_at":"2018-07-11T17:00:00.000Z",
+        "venue":{
+            "name":"Coffee Bar",
+            "location":{
+                "formatted_address":"1890 Bryant St (btwn Mariposa St. \u0026 Florida St.), San Francisco, CA 94110, United States",
+                "latitude":37.76312402977745,
+                "longitude":-122.41099834442139
+            },
+            "url":"https://foursquare.com/v/47fde9f4f964a520df4e1fe3"
+        }
+    },
+    {
+        "id":"e483f188-f7aa-4847-9af4-935ed3a18682",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Vive La Tarte, Ferry Building",
+        "image_url":"https://fastly.4sqi.net/img/general/1440x1440/202279_mH5_b9Et20Da0xKaJN4ZGs0pPcHDtpmY8SjXNsuDRDs.jpg",
+        "start_at":"2018-06-27T15:30:00.000Z",
+        "end_at":"2018-06-27T17:00:00.000Z",
+        "venue":{
+            "name":"Vive La Tarte",
+            "location":{
+                "formatted_address":"One Ferry Building, San Francisco Bay Trail #50, San Francisco, CA 94111, United States",
+                "latitude":37.795639316428435,
+                "longitude":-122.39436652389665
+            },
+            "url":"https://foursquare.com/v/5a62620d18d43b054358cfa7"
+        }
+    },
+    {
+        "id":"493d4f04-1736-447e-8165-24667ba7a54c",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Réveille Coffee: North Beach edition",
+        "image_url":"https://fastly.4sqi.net/img/general/1440x1440/67876659_YhXeXsphRZ3lVCoNfgWBajU0Gu3S0QNmmEe5oikdj38.jpg",
+        "start_at":"2018-06-20T15:30:00.000Z",
+        "end_at":"2018-06-20T17:00:00.000Z",
+        "venue":{
+            "name":"Réveille Coffee Co.",
+            "location":{
+                "formatted_address":"200 Columbus Ave (at Pacific Ave), San Francisco, CA 94133, United States",
+                "latitude":37.79720357373528,
+                "longitude":-122.40558850097074
+            },
+            "url":"https://foursquare.com/v/50ad5b86067d33c34bef6724"
+        }
+    },
+    {
+        "id":"fab83621-7893-4f26-8da1-06b448a4f6a0",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Ritual Coffee Roasters",
+        "image_url":"https://fastly.4sqi.net/img/general/612x612/327259_6ULKGf6GE0hCODVXakplFwyOBxEX-eV8zIVfT9854bk.jpg",
+        "start_at":"2018-06-13T15:30:00.000Z",
+        "end_at":"2018-06-13T17:00:00.000Z",
+        "venue":{
+            "name":"Ritual Coffee Roasters",
+            "location":{
+                "formatted_address":"1026 Valencia St (btwn 21st \u0026 Hill St), San Francisco, CA 94110, United States",
+                "latitude":37.756501,
+                "longitude":-122.421146
+            },
+            "url":"https://foursquare.com/v/42853f80f964a5200c231fe3"
+        }
+    },
+    {
+        "id":"c900e516-20e1-4fcf-b580-b8362a0d497f",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Frog Hollow Farm (Ferry Building)",
+        "image_url":"https://fastly.4sqi.net/img/general/540x720/EpMIf5hck4tukhnTf2wjCpVQmbcaiA0y3_WhNFdhaoo.jpg",
+        "start_at":"2018-06-06T15:30:00.000Z",
+        "end_at":"2018-06-06T17:00:00.000Z",
+        "venue":{
+            "name":"Frog Hollow Farm",
+            "location":{
+                "formatted_address":"1 Ferry Building, Shop # 46 (The Embarcadero), San Francisco, CA 94111, United States",
+                "latitude":37.79522072651426,
+                "longitude":-122.39276118804247
+            },
+            "url":"https://foursquare.com/v/4b26aa12f964a520277f24e3"
+        }
+    },
+    {
+        "id":"2d4b06e5-d147-4a0b-b91f-127b7e6bd963",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Saint Frank",
+        "image_url":"https://fastly.4sqi.net/img/general/1900x1333/6361367_yMxWrxSVTObiUg5rfYvRcQflM4Pvz2FZpUSgSRvhHP0.jpg",
+        "start_at":"2018-05-30T15:30:00.000Z",
+        "end_at":"2018-05-30T17:00:00.000Z",
+        "venue":{
+            "name":"Saint Frank",
+            "location":{
+                "formatted_address":"1081 Mission St (7th), San Francisco, CA 94103, United States",
+                "latitude":37.77951880012043,
+                "longitude":-122.41043187684741
+            },
+            "url":"https://foursquare.com/v/5964f126b3d8e2739960e1af"
+        }
+    },
+    {
+        "id":"6c0448fe-5c44-4af7-be9d-faec30174911",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Sightglass on 7th",
+        "image_url":"https://fastly.4sqi.net/img/general/612x612/6210237_YSD5U_kNDQhIxBpDrt2b-1S5-5QJZ3GAH_C2l1wLWTE.jpg",
+        "start_at":"2018-05-23T15:30:00.000Z",
+        "end_at":"2018-05-23T17:00:00.000Z",
+        "venue":{
+            "name":"Sightglass Coffee",
+            "location":{
+                "formatted_address":"270 7th St (btwn Howard \u0026 Folsom St), San Francisco, CA 94103, United States",
+                "latitude":37.77702490373948,
+                "longitude":-122.40852980833175
+            },
+            "url":"https://foursquare.com/v/4a4b8a43f964a5206fac1fe3"
+        }
+    },
+    {
+        "id":"3c5a4941-4f52-4afa-a08a-30094c6ca197",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Ritual Coffee on Valencia",
+        "image_url":"https://fastly.4sqi.net/img/general/612x612/327259_6ULKGf6GE0hCODVXakplFwyOBxEX-eV8zIVfT9854bk.jpg",
+        "start_at":"2018-05-16T15:30:00.000Z",
+        "end_at":"2018-05-16T17:00:00.000Z",
+        "venue":{
+            "name":"Ritual Coffee Roasters",
+            "location":{
+                "formatted_address":"1026 Valencia St (btwn 21st \u0026 Hill St), San Francisco, CA 94110, United States",
+                "latitude":37.756501,
+                "longitude":-122.421146
+            },
+            "url":"https://foursquare.com/v/42853f80f964a5200c231fe3"
+        }
+    },
+    {
+        "id":"09ac1401-2442-4e8a-9f51-1f60d07c12cd",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"La Capra - Fidi ",
+        "image_url":"https://fastly.4sqi.net/img/general/720x720/10517536_SMmLf_zPvVH31kRe1ssbwLaWX-JoqwpuRqtuKkt8w44.jpg",
+        "start_at":"2018-05-09T15:30:00.000Z",
+        "end_at":"2018-05-09T17:00:00.000Z",
+        "venue":{
+            "name":"La Capra Coffee",
+            "location":{
+                "formatted_address":"50 Fremont St (at Mission St), San Francisco, CA 94105, United States",
+                "latitude":37.79068767619693,
+                "longitude":-122.3974671861976
+            },
+            "url":"https://foursquare.com/v/5464d1a9498e9169e65dc8bc"
+        }
+    },
+    {
+        "id":"b31c812a-7646-4399-b1cd-8ad999e58cc4",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Blue Bottle Market Square",
+        "image_url":"https://fastly.4sqi.net/img/general/1439x1920/535536_MtdRo9mRxVfI_KnHQLBQddCR4M6VTUX1icsjFHJ9cto.jpg",
+        "start_at":"2018-05-02T15:30:00.000Z",
+        "end_at":"2018-05-02T15:00:00.000Z",
+        "venue":{
+            "name":"Blue Bottle Coffee",
+            "location":{
+                "formatted_address":"1355 Market St Ste 190 (at 10th St), San Francisco, CA 94103, United States",
+                "latitude":37.77628641647586,
+                "longitude":-122.41686701774597
+            },
+            "url":"https://foursquare.com/v/5560dbdb498e91a2bcde84f6"
+        }
+    },
+    {
+        "id":"d612c58f-abf4-4320-a030-d291f85554e2",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Ritual Coffee Roasters on Octavia",
+        "image_url":"https://fastly.4sqi.net/img/general/960x720/879916_FXOxIesoPKWYCoRt-HqUpWSC_xGwl_2gp68WCbN-81o.jpg",
+        "start_at":"2018-04-25T15:30:00.000Z",
+        "end_at":"2018-04-25T17:00:00.000Z",
+        "venue":{
+            "name":"Ritual Coffee Roasters",
+            "location":{
+                "formatted_address":"432B Octavia St (at Hayes St), San Francisco, CA 94102, United States",
+                "latitude":37.776476344721765,
+                "longitude":-122.42428110362547
+            },
+            "url":"https://foursquare.com/v/4dd94350e4cd37c893d8146f"
+        }
+    },
+    {
+        "id":"850fdc2c-55ef-4423-a614-29164f6a0f2b",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Vive La Tarte",
+        "image_url":"https://fastly.4sqi.net/img/general/1440x1440/2371535_KHZPh_eMeoeZ3lkH8fvVxGogUTRoqh04MtkGcLDjoz4.jpg",
+        "start_at":"2018-04-18T15:30:00.000Z",
+        "end_at":"2018-04-18T17:00:00.000Z",
+        "venue":{
+            "name":"Vive La Tarte",
+            "location":{
+                "formatted_address":"1160 Howard St (at 8th St), San Francisco, CA 94103, United States",
+                "latitude":37.77701166643817,
+                "longitude":-122.41089851840502
+            },
+            "url":"https://foursquare.com/v/55554f0a498e7ffc6883325c"
+        }
+    },
+    {
+        "id":"5b135a84-c04f-4059-bce1-f1c81a7a279e",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Bluestone",
+        "image_url":"https://fastly.4sqi.net/img/general/1440x1920/6551318_yrMFxDz2kc9-ODCQq0-KDx60mEr6glPH81GIbzWbca4.jpg",
+        "start_at":"2018-04-11T15:30:00.000Z",
+        "end_at":"2018-04-11T17:00:00.000Z",
+        "venue":{
+            "name":"Bluestone Lane",
+            "location":{
+                "formatted_address":"227 Front St, San Francisco, CA 94111, United States",
+                "latitude":37.793779,
+                "longitude":-122.39909072883609
+            },
+            "url":"https://foursquare.com/v/5a03ae7366f3cd6001ed55d7"
+        }
+    },
+    {
+        "id":"04af2945-7f88-4b07-8e59-650284ae4cbc",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Noon All Day",
+        "image_url":"https://fastly.4sqi.net/img/general/1440x1920/174400_KCqnDucARKV-45hhlWtHPfOIlR_Amcpt8YfRle3gGPw.jpg",
+        "start_at":"2018-04-04T15:30:00.000Z",
+        "end_at":"2018-04-04T17:00:07.000Z",
+        "venue":{
+            "name":"Noon All Day",
+            "location":{
+                "formatted_address":"690 Indiana St (19th), San Francisco, CA 94107, United States",
+                "latitude":37.76166712267446,
+                "longitude":-122.3916928068098
+            },
+            "url":"https://foursquare.com/v/5a1f260b916bc11d05c05186"
+        }
+    },
+    {
+        "id":"5dae6dc8-023e-46b8-9820-214e34e6bc13",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Tartine Manufactory: Bye Harrison",
+        "image_url":"https://fastly.4sqi.net/img/general/1440x1920/795_nTvnN4pCuRyg5gPOVZNi0wizp3tG9eoMSLm7gNrzVF8.jpg",
+        "start_at":"2018-03-28T15:30:00.000Z",
+        "end_at":"2018-03-28T17:00:00.000Z",
+        "venue":{
+            "name":"Tartine Manufactory",
+            "location":{
+                "formatted_address":"595 Alabama St (at 18th St), San Francisco, CA 94110, United States",
+                "latitude":37.76190587370959,
+                "longitude":-122.41196347723321
+            },
+            "url":"https://foursquare.com/v/57ac23c1498eef0851316d5e"
+        }
+    },
+    {
+        "id":"cef6a45b-a469-4b21-897e-c7a007130fbf",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Verve on Castro",
+        "image_url":"https://fastly.4sqi.net/img/general/960x960/50707264_rFSjPdxgll6nzdPicKyaBm3tD7TtesEL0q13keZiTvw.jpg",
+        "start_at":"2018-03-21T15:30:00.000Z",
+        "end_at":"2018-03-21T18:00:00.000Z",
+        "venue":{
+            "name":"Verve Coffee Roasters",
+            "location":{
+                "formatted_address":"2101 Market St (at Church St), San Francisco, CA 94114, United States",
+                "latitude":37.767121,
+                "longitude":-122.429152
+            },
+            "url":"https://foursquare.com/v/589f6a4372714f7d35566b6a"
+        }
+    },
+    {
+        "id":"fc69356d-1315-4344-91c7-761ccb5e4cb6",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"St Clare Greg's Coffupaversary",
+        "image_url":"https://fastly.4sqi.net/img/general/1440x1440/419_N4-COtDc_pvE7MUmYN1uXU9Zp779GNURLPLYJbBrHXI.jpg",
+        "start_at":"2018-03-14T15:30:00.000Z",
+        "end_at":"2018-03-14T17:00:00.000Z",
+        "venue":{
+            "name":"St. Clare Coffee",
+            "location":{
+                "formatted_address":"654 Mission St, San Francisco, CA 94105, United States",
+                "latitude":37.78705859631812,
+                "longitude":-122.40111785402604
+            },
+            "url":"https://foursquare.com/v/5727c93c498e5d75b9c90e3d"
+        }
+    },
+    {
+        "id":"45f2170e-e302-4405-8edf-7901cc2bcbf0",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"OG Sightglass on 7th",
+        "image_url":"https://fastly.4sqi.net/img/general/612x612/6210237_YSD5U_kNDQhIxBpDrt2b-1S5-5QJZ3GAH_C2l1wLWTE.jpg",
+        "start_at":"2018-03-07T16:30:00.000Z",
+        "end_at":"2018-03-07T18:00:00.000Z",
+        "venue":{
+            "name":"Sightglass Coffee",
+            "location":{
+                "formatted_address":"270 7th St (btwn Howard \u0026 Folsom St), San Francisco, CA 94103, United States",
+                "latitude":37.77702490373948,
+                "longitude":-122.40852980833175
+            },
+            "url":"https://foursquare.com/v/4a4b8a43f964a5206fac1fe3"
+        }
+    },
+    {
+        "id":"0935399a-a1e1-47be-b22b-4f5213226412",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"St Frank in SOMA",
+        "image_url":"https://fastly.4sqi.net/img/general/1900x1333/6361367_yMxWrxSVTObiUg5rfYvRcQflM4Pvz2FZpUSgSRvhHP0.jpg",
+        "start_at":"2018-02-28T16:30:00.000Z",
+        "end_at":"2018-02-28T18:00:00.000Z",
+        "venue":{
+            "name":"Saint Frank",
+            "location":{
+                "formatted_address":"1081 Mission St (7th), San Francisco, CA 94103, United States",
+                "latitude":37.77951880012043,
+                "longitude":-122.41043187684741
+            },
+            "url":"https://foursquare.com/v/5964f126b3d8e2739960e1af"
+        }
+    },
+    {
+        "id":"9e0eb6db-446c-480a-8818-2a464622f166",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Stable Cafe",
+        "image_url":"https://fastly.4sqi.net/img/general/612x612/37799673_wa4SzoZPsNNJKmAQDXrQEBADnR9TG22uEtIU3d3uPZc.jpg",
+        "start_at":"2018-02-21T16:30:00.000Z",
+        "end_at":"2018-02-21T18:00:00.000Z",
+        "venue":{
+            "name":"Stable Cafe",
+            "location":{
+                "formatted_address":"2128 Folsom St (btwn 17th \u0026 18th St), San Francisco, CA 94110, United States",
+                "latitude":37.763233,
+                "longitude":-122.415262
+            },
+            "url":"https://foursquare.com/v/49b1a93df964a520d9521fe3"
+        }
+    },
+    {
+        "id":"6ecb90ea-8a27-46f3-b10c-fb4e541f858b",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Blue Bottle at South Park",
+        "image_url":"https://fastly.4sqi.net/img/general/1920x1440/2261218_FBIhkFupzGB_35eYIbhRazhmY-tqN0kIAYObF7GlKhs.jpg",
+        "start_at":"2018-02-14T16:30:00.000Z",
+        "end_at":"2018-02-14T18:00:30.000Z",
+        "venue":{
+            "name":"Blue Bottle Coffee",
+            "location":{
+                "formatted_address":"2 South Park, San Francisco, CA 94107, United States",
+                "latitude":37.78249688302822,
+                "longitude":-122.39298243819015
+            },
+            "url":"https://foursquare.com/v/582352764972292ad70ec0bd"
+        }
+    },
+    {
+        "id":"43c5ad0b-215b-416d-aaf5-442464746b66",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Contraband Coffee Bar",
+        "image_url":"https://fastly.4sqi.net/img/general/1440x1920/1031177_uPdfmDvOfGvRpKFjWHwmKAzIjNj6zcmhw5BGGc5PF2s.jpg",
+        "start_at":"2018-02-07T16:30:00.000Z",
+        "end_at":"2018-02-07T18:00:00.000Z",
+        "venue":{
+            "name":"Contraband Coffee Bar",
+            "location":{
+                "formatted_address":"260 5th St (5th And Clementina), San Francisco, CA 94103, United States",
+                "latitude":37.780701680131706,
+                "longitude":-122.40408922289538
+            },
+            "url":"https://foursquare.com/v/58780cf39e35d31224af6dcb"
+        }
+    },
+    {
+        "id":"53f6409b-975b-4d09-9ada-88964f08037f",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Haus",
+        "image_url":"https://fastly.4sqi.net/img/general/720x720/1923785_UgcIW1SUPUOIOv-dv2kMFq-ZrZrMnT0QLCrsSCOKhIs.jpg",
+        "start_at":"2018-01-31T16:30:00.000Z",
+        "end_at":"2018-01-31T18:00:00.000Z",
+        "venue":{
+            "name":"Haus Coffee",
+            "location":{
+                "formatted_address":"3086 24th St (at Folsom St), San Francisco, CA 94110, United States",
+                "latitude":37.752584274302066,
+                "longitude":-122.41365815417876
+            },
+            "url":"https://foursquare.com/v/4a188a97f964a520c5791fe3"
+        }
+    },
+    {
+        "id":"2c7d4b50-2f65-4474-b99c-439c7163c587",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Blue Bottle Coffee - Ferry Building",
+        "image_url":"https://fastly.4sqi.net/img/general/1440x1920/7302002_6HBHoslcDnWrAWkU9c6hZu5nyrbTYhLe0he0xZGuBXQ.jpg",
+        "start_at":"2018-01-24T16:30:00.000Z",
+        "end_at":"2018-01-24T18:00:00.000Z",
+        "venue":{
+            "name":"Blue Bottle Coffee",
+            "location":{
+                "formatted_address":"1 Ferry Building Ste 7 (at The Embarcardero), San Francisco, CA 94111, United States",
+                "latitude":37.79590475625579,
+                "longitude":-122.39393759555746
+            },
+            "url":"https://foursquare.com/v/49d68c61f964a520e65c1fe3"
+        }
+    },
+    {
+        "id":"5e01417c-ef94-40e0-9953-26d9083f090f",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Red Door (1st and Howard)",
+        "image_url":"https://fastly.4sqi.net/img/general/1920x1440/20560910_V7K-fdRUY8fYCYSMyT6bct5Ghai0EFmMVytdae0q3QA.jpg",
+        "start_at":"2018-01-17T16:30:00.000Z",
+        "end_at":"2018-01-17T18:00:00.000Z",
+        "venue":{
+            "name":"Red Door Coffee",
+            "location":{
+                "formatted_address":"505 Howard St (1st St), San Francisco, CA 94105, United States",
+                "latitude":37.78816214897159,
+                "longitude":-122.39601666747147
+            },
+            "url":"https://foursquare.com/v/5473ada4498e5d7a1971dc74"
+        }
+    },
+    {
+        "id":"4eae947c-579c-4af1-8e79-6c1f259fbf28",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Coffee Bar Mission",
+        "image_url":"https://fastly.4sqi.net/img/general/612x612/38434107_k-VsBY7sffgOl4Vh1XlJMX5QhiJGvIvxUqsgM9UVwbc.jpg",
+        "start_at":"2018-01-10T16:30:00.000Z",
+        "end_at":"2018-01-10T18:00:00.000Z",
+        "venue":{
+            "name":"Coffee Bar",
+            "location":{
+                "formatted_address":"1890 Bryant St (btwn Mariposa St. \u0026 Florida St.), San Francisco, CA 94110, United States",
+                "latitude":37.76312402977745,
+                "longitude":-122.41099834442139
+            },
+            "url":"https://foursquare.com/v/47fde9f4f964a520df4e1fe3"
+        }
+    },
+    {
+        "id":"9aa03ae9-8eca-44a4-bbc1-3c7f84464f51",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Ritual Valencia",
+        "image_url":"https://fastly.4sqi.net/img/general/612x612/327259_6ULKGf6GE0hCODVXakplFwyOBxEX-eV8zIVfT9854bk.jpg",
+        "start_at":"2018-01-03T16:30:00.000Z",
+        "end_at":"2018-01-03T18:00:00.000Z",
+        "venue":{
+            "name":"Ritual Coffee Roasters",
+            "location":{
+                "formatted_address":"1026 Valencia St (btwn 21st \u0026 Hill St), San Francisco, CA 94110, United States",
+                "latitude":37.756501,
+                "longitude":-122.421146
+            },
+            "url":"https://foursquare.com/v/42853f80f964a5200c231fe3"
+        }
+    },
+    {
+        "id":"668fede9-4c49-46fe-ae45-dea6f81b28ae",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"Sightglass Coffee on 7th",
+        "image_url":"https://fastly.4sqi.net/img/general/612x612/6210237_YSD5U_kNDQhIxBpDrt2b-1S5-5QJZ3GAH_C2l1wLWTE.jpg",
+        "start_at":"2017-12-20T16:30:00.000Z",
+        "end_at":"2017-12-20T18:00:00.000Z",
+        "venue":{
+            "name":"Sightglass Coffee",
+            "location":{
+                "formatted_address":"270 7th St (btwn Howard \u0026 Folsom St), San Francisco, CA 94103, United States",
+                "latitude":37.77702490373948,
+                "longitude":-122.40852980833175
+            },
+            "url":"https://foursquare.com/v/4a4b8a43f964a5206fac1fe3"
+        }
+    },
+    {
+        "id":"f2f22e4e-e112-4cfd-83d5-f7965448b08d",
+        "group_id":"28ef50f9-b909-4f03-9a69-a8218a8cbd99",
+        "name":"The Mill",
+        "image_url":"https://fastly.4sqi.net/img/general/612x612/403777_tR60tUZMVoJ5Q5ylr8hQnp0pgZTy5BOQLqydzAoHWiA.jpg",
+        "start_at":"2017-12-13T16:30:00.000Z",
+        "end_at":"2017-12-13T18:00:00.000Z",
+        "venue":{
+            "name":"The Mill",
+            "location":{
+                "formatted_address":"736 Divisadero St (btwn Grove St \u0026 Fulton St), San Francisco, CA 94117, United States",
+                "latitude":37.77632881728594,
+                "longitude":-122.43802428245543
+            },
+            "url":"https://foursquare.com/v/4feddd79d86cd6f22dc171a9"
+        }
+    }
+]

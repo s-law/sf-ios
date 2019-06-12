@@ -91,6 +91,16 @@
 		E22CBCD3228FA2C20091B99B /* UIActivityViewController+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = E22CBCD2228FA2C20091B99B /* UIActivityViewController+Utilities.m */; };
 		E28D38E12267B259004266BA /* BackgroundFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = E28D38E02267B259004266BA /* BackgroundFetcher.m */; };
 		E2EDC106225D059100F618C9 /* UNUserNotificationCenter+ConvenienceInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EDC104225D059100F618C9 /* UNUserNotificationCenter+ConvenienceInitializer.m */; };
+		E6060E8422ACDA520016A0CD /* FeedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6060E8322ACDA520016A0CD /* FeedRow.swift */; };
+		E6060E8622ACDBC40016A0CD /* eventData.json in Resources */ = {isa = PBXBuildFile; fileRef = E6060E8522ACDBC40016A0CD /* eventData.json */; };
+		E6060E8922ACDC500016A0CD /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6060E8822ACDC500016A0CD /* Data.swift */; };
+		E6060E8B22AF37490016A0CD /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6060E8A22AF37490016A0CD /* MapView.swift */; };
+		E6060E8D22AF3DB40016A0CD /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6060E8C22AF3DB40016A0CD /* EventDetailView.swift */; };
+		E6060E8F22AF83980016A0CD /* TransitButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6060E8E22AF83980016A0CD /* TransitButtonView.swift */; };
+		E6060E9122AF86920016A0CD /* EventDetailTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6060E9022AF86920016A0CD /* EventDetailTextView.swift */; };
+		E6060E9322AF88600016A0CD /* turtlerock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6060E9222AF88600016A0CD /* turtlerock.jpg */; };
+		E64DF48622ACD482006435CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DF48522ACD482006435CF /* SceneDelegate.swift */; };
+		E6F87B0922ACD252006BE720 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F87B0822ACD252006BE720 /* FeedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -279,6 +289,17 @@
 		E28D38E02267B259004266BA /* BackgroundFetcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackgroundFetcher.m; sourceTree = "<group>"; };
 		E2EDC104225D059100F618C9 /* UNUserNotificationCenter+ConvenienceInitializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UNUserNotificationCenter+ConvenienceInitializer.m"; sourceTree = "<group>"; };
 		E2EDC105225D059100F618C9 /* UNUserNotificationCenter+ConvenienceInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UNUserNotificationCenter+ConvenienceInitializer.h"; sourceTree = "<group>"; };
+		E6060E8322ACDA520016A0CD /* FeedRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRow.swift; sourceTree = "<group>"; };
+		E6060E8522ACDBC40016A0CD /* eventData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = eventData.json; sourceTree = "<group>"; };
+		E6060E8822ACDC500016A0CD /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		E6060E8A22AF37490016A0CD /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		E6060E8C22AF3DB40016A0CD /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
+		E6060E8E22AF83980016A0CD /* TransitButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitButtonView.swift; sourceTree = "<group>"; };
+		E6060E9022AF86920016A0CD /* EventDetailTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailTextView.swift; sourceTree = "<group>"; };
+		E6060E9222AF88600016A0CD /* turtlerock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = turtlerock.jpg; sourceTree = "<group>"; };
+		E64DF48522ACD482006435CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E6F036FE22ACCF03007A9895 /* Coffup-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Coffup-Bridging-Header.h"; sourceTree = "<group>"; };
+		E6F87B0822ACD252006BE720 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		E76C9B6B05C350D2C01B6FE4 /* Pods-SF iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SF iOSTests.release.xcconfig"; path = "Target Support Files/Pods-SF iOSTests/Pods-SF iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -425,6 +446,8 @@
 				5F4DAB04228393B900C67238 /* EventsFeedTableView.m */,
 				5F4DAB062283A84500C67238 /* EventFeedDelegate.h */,
 				5F4DAB072283A84500C67238 /* EventFeedDelegate.m */,
+				E6F036FE22ACCF03007A9895 /* Coffup-Bridging-Header.h */,
+				E6060E8722ACDBCE0016A0CD /* SwiftUI */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -588,9 +611,11 @@
 				19DD32F6225EFC6100C0EE5A /* SwipableNavigationContainer.h */,
 				19DD32F7225EFC6100C0EE5A /* SwipableNavigationContainer.m */,
 				C8810A2B1F2BFE6900DCFEB6 /* Assets.xcassets */,
+				E6060E9222AF88600016A0CD /* turtlerock.jpg */,
 				C8810A2D1F2BFE6900DCFEB6 /* LaunchScreen.storyboard */,
 				C8810A301F2BFE6900DCFEB6 /* Info.plist */,
 				C8810A311F2BFE6900DCFEB6 /* main.m */,
+				E64DF48522ACD482006435CF /* SceneDelegate.swift */,
 			);
 			path = "SF iOS";
 			sourceTree = "<group>";
@@ -758,6 +783,21 @@
 			path = UserNotification;
 			sourceTree = "<group>";
 		};
+		E6060E8722ACDBCE0016A0CD /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				E6060E8522ACDBC40016A0CD /* eventData.json */,
+				E6F87B0822ACD252006BE720 /* FeedView.swift */,
+				E6060E8322ACDA520016A0CD /* FeedRow.swift */,
+				E6060E8822ACDC500016A0CD /* Data.swift */,
+				E6060E8A22AF37490016A0CD /* MapView.swift */,
+				E6060E8C22AF3DB40016A0CD /* EventDetailView.swift */,
+				E6060E8E22AF83980016A0CD /* TransitButtonView.swift */,
+				E6060E9022AF86920016A0CD /* EventDetailTextView.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -809,6 +849,7 @@
 				TargetAttributes = {
 					C8810A1E1F2BFE6900DCFEB6 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1100;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -854,6 +895,8 @@
 			files = (
 				C86178E31F36D1CF00883EF1 /* secrets.plist in Resources */,
 				5F2FE4AC224F40F50081C2B1 /* secrets-example.plist in Resources */,
+				E6060E9322AF88600016A0CD /* turtlerock.jpg in Resources */,
+				E6060E8622ACDBC40016A0CD /* eventData.json in Resources */,
 				C8810A2F1F2BFE6900DCFEB6 /* LaunchScreen.storyboard in Resources */,
 				C8810A2C1F2BFE6900DCFEB6 /* Assets.xcassets in Resources */,
 			);
@@ -924,13 +967,17 @@
 				C8307A111F365E58005CB3D2 /* AsyncBlockOperation.m in Sources */,
 				C8307A081F365687005CB3D2 /* UberTravelTimeEstimateOperation.m in Sources */,
 				C82516421F2FE9E7006B9D7E /* FeedItem.m in Sources */,
+				E6060E8422ACDA520016A0CD /* FeedRow.swift in Sources */,
 				E28D38E12267B259004266BA /* BackgroundFetcher.m in Sources */,
 				C8CC493F1F3307DD0064B03E /* TravelTime.m in Sources */,
+				E6060E8B22AF37490016A0CD /* MapView.swift in Sources */,
 				C8709C661F42632300DFE7A9 /* ImageStore.m in Sources */,
 				C825163C1F2FDF46006B9D7E /* UIColor+SFiOSColors.m in Sources */,
+				E64DF48622ACD482006435CF /* SceneDelegate.swift in Sources */,
 				C86DD43B1F3A4A6200C58723 /* TravelTime+Arrival.m in Sources */,
 				C8810A321F2BFE6900DCFEB6 /* main.m in Sources */,
 				19DD32F5225B294900C0EE5A /* NSUserDefaults+Settings.m in Sources */,
+				E6060E8922ACDC500016A0CD /* Data.swift in Sources */,
 				5F175B992267D2BA00246C08 /* Group.m in Sources */,
 				C82516301F2FA260006B9D7E /* EventsFeedViewController.m in Sources */,
 				C89A8DDF1F2D8BCF007A5B0C /* Event.m in Sources */,
@@ -945,6 +992,7 @@
 				5F175B9F2267D6F200246C08 /* GroupFetchOperation.m in Sources */,
 				C88A19C61F2DC52D00C08187 /* NSError+Constructor.m in Sources */,
 				19DD32FB225EFE9700C0EE5A /* SettingsViewController.m in Sources */,
+				E6F87B0922ACD252006BE720 /* FeedView.swift in Sources */,
 				1955ED6B2290925100DC92A5 /* AffogatoStyle.m in Sources */,
 				C86DD4381F3A3D3100C58723 /* NSAttributedString+Kerning.m in Sources */,
 				C8CC49311F32A6820064B03E /* NSNotification+ApplicationEventNotifications.m in Sources */,
@@ -961,7 +1009,9 @@
 				5FECEFD4224ECACC00AA8A25 /* Venue.m in Sources */,
 				5F313558227A4B6A00751CE5 /* UNNotificationContent+EventNotifications.m in Sources */,
 				5F4DAB082283A84500C67238 /* EventFeedDelegate.m in Sources */,
+				E6060E8F22AF83980016A0CD /* TransitButtonView.swift in Sources */,
 				5F960DE52283757900D8A96C /* ImageBasedCollectionViewCell.m in Sources */,
+				E6060E9122AF86920016A0CD /* EventDetailTextView.swift in Sources */,
 				5F175BA32267E60E00246C08 /* GroupFetchService.m in Sources */,
 				5FE80F68227A33D100080000 /* UNNotificationAttachment+EventNotifications.m in Sources */,
 				5F960DE8228387C100D8A96C /* GroupCollectionView.m in Sources */,
@@ -972,6 +1022,7 @@
 				C8307A0E1F365969005CB3D2 /* HTTPRequestAsyncOperation.m in Sources */,
 				C8307A141F368BFB005CB3D2 /* LyftTravelTimeEstimateOperation.m in Sources */,
 				1955ED742291269400DC92A5 /* ChildViewControllerForwardingNavigationController.m in Sources */,
+				E6060E8D22AF3DB40016A0CD /* EventDetailView.swift in Sources */,
 				5F313554227A366F00751CE5 /* UNUserNotificationCenter+EventNotifications.m in Sources */,
 				C82516461F2FEB6F006B9D7E /* NSDate+Utilities.m in Sources */,
 				C82516341F2FBBD2006B9D7E /* FeedItemCell.m in Sources */,
@@ -1141,17 +1192,21 @@
 			baseConfigurationReference = 95933610458B233CD7F79875 /* Pods-Coffup.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Coffup.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 17;
 				DEVELOPMENT_TEAM = F4WTN36U2F;
 				INFOPLIST_FILE = "SF iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.thumbworks.SF-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SF iOS/Feed/Coffup-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1162,17 +1217,20 @@
 			baseConfigurationReference = 657137982D0CEF4F9D8C04C9 /* Pods-Coffup.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Coffup.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 17;
 				DEVELOPMENT_TEAM = F4WTN36U2F;
 				INFOPLIST_FILE = "SF iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.thumbworks.SF-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SF iOS/Feed/Coffup-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1182,6 +1240,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 757F9676D2866F448FD26FB1 /* Pods-SF iOSTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = F4WTN36U2F;
 				INFOPLIST_FILE = "SF iOSTests/Info.plist";
@@ -1197,6 +1256,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E76C9B6B05C350D2C01B6FE4 /* Pods-SF iOSTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = F4WTN36U2F;
 				INFOPLIST_FILE = "SF iOSTests/Info.plist";
