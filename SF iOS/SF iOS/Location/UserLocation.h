@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)requestLocationPermission;
 
 typedef void(^UserLocationRequestCompletionHandler)(CLLocation *_Nullable currentLocation, NSError *_Nullable error);
-- (void)requestWithCompletionHandler:(UserLocationRequestCompletionHandler)completionHandler;
+- (void)requestWithCompletionHandler:(UserLocationRequestCompletionHandler)completionHandler shouldQueueIfLocationIsUnavailable:(BOOL)shouldQueue;
 
 @end
 NS_ASSUME_NONNULL_END
