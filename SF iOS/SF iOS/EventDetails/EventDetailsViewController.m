@@ -171,7 +171,7 @@ NS_ASSUME_NONNULL_END
                 }];
             }
         }];
-    }];
+    } shouldQueueIfLocationIsUnavailable:true];
 }
 
 // MARK: Share
