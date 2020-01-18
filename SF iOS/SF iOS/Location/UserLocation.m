@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 // Support multiple requests backed by a single location manager
 @property (nullable, nonatomic) NSMutableArray<UserLocationRequestCompletionHandler> *requestCompletionHandlers;
+@property (nullable, nonatomic) NSMutableArray<UserLocationRequestCompletionHandler> *queuedRequestCompletionHandlers;
 
 @end
 NS_ASSUME_NONNULL_END
@@ -25,6 +26,7 @@ NS_ASSUME_NONNULL_END
 - (instancetype)init {
     if (self = [super init]) {
         self.requestCompletionHandlers = [NSMutableArray new];
+        self.queuedRequestCompletionHandlers = [NSMutableArray new];
         self.locationManager = [CLLocationManager new];
         self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
         self.locationManager.delegate = self;
@@ -57,10 +59,14 @@ NS_ASSUME_NONNULL_END
     }
 }
 
--(void)requestWithCompletionHandler:(UserLocationRequestCompletionHandler)completionHandler {
+-(void)requestWithCompletionHandler:(UserLocationRequestCompletionHandler)completionHandler shouldQueueIfLocationIsUnavailable:(BOOL)shouldQueue {
     if (!self.canRequestUserLocation) {
-        completionHandler(nil, [NSError appErrorWithDescription:@"Access to location has not been granted."]);
-        return;
+        if (shouldQueue) {
+            [self.queuedRequestCompletionHandlers addObject:completionHandler];
+        } else {
+            completionHandler(nil, [NSError appErrorWithDescription:@"Access to location has not been granted."]);
+            return;
+        }
     }
     
     [self.requestCompletionHandlers addObject:completionHandler];
@@ -80,6 +86,21 @@ NS_ASSUME_NONNULL_END
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
     [self callCompletionHandlersWithLocation:nil error:error];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
+    switch(status) {
+        case kCLAuthorizationStatusAuthorizedAlways:
+        case kCLAuthorizationStatusAuthorizedWhenInUse:
+        case kCLAuthorizationStatusNotDetermined:
+            [self.requestCompletionHandlers addObjectsFromArray:self.queuedRequestCompletionHandlers];
+            [self.queuedRequestCompletionHandlers removeAllObjects];
+            [self.locationManager requestLocation];
+            break;
+        case kCLAuthorizationStatusRestricted:
+        case kCLAuthorizationStatusDenied:
+            break;
+    }
 }
 
 // MARK - Completion Handlers
