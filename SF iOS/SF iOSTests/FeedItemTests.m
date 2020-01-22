@@ -13,7 +13,11 @@
 @interface FeedItemTests : XCTestCase
 
 @property (nonatomic) Event *event;
+@property (nonatomic) NSDate *now;
 @property (nonatomic) NSDate *noon;
+@property (nonatomic) NSDateComponents *nowComponents;
+@property (nonatomic) NSDateFormatter *formatter;
+@property (nonatomic) NSCalendar *calendar;
 @end
 
 @implementation FeedItemTests
@@ -40,9 +44,12 @@
                            };
     self.event = [[Event alloc] initWithDictionary:dict];
     self.event.type = EventTypeSFCoffee;
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
-    self.noon = [calendar dateBySettingHour:12 minute:0 second:0 ofDate:[NSDate date] options:0];
+    self.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    self.now = [NSDate date];
+    self.nowComponents = [self.calendar components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:self.now];
+    self.noon = [self.calendar dateBySettingHour:12 minute:0 second:0 ofDate:self.now options:0];
     self.event.date = self.noon;
+    self.formatter = [NSDateFormatter new];
 }
 
 - (void)tearDown {
@@ -64,7 +71,7 @@
     NSDate *tomorrow = [self dateByAddingUnit:NSCalendarUnitDay value:1 toDate:self.noon];
     self.event.endDate = tomorrow;
     FeedItem *item = [[FeedItem alloc] initWithEvent:self.event];
-    
+
     XCTAssertTrue([item.dateString isEqualToString:@"Today"]);
     XCTAssertTrue(item.isActive);
 }
@@ -73,7 +80,7 @@
     NSDate *eventDate = [self dateByAddingUnit:NSCalendarUnitHour value:-2 toDate:self.noon];
     self.event.date = eventDate;
     FeedItem *item = [[FeedItem alloc] initWithEvent:self.event];
-    
+
     XCTAssertTrue([item.dateString isEqualToString:@"Today"]);
     XCTAssertFalse(item.isActive);
 }
@@ -82,20 +89,41 @@
     NSDate *eventDate = [self dateByAddingUnit:NSCalendarUnitDay value:-1 toDate:self.noon];
     self.event.date = eventDate;
     FeedItem *item = [[FeedItem alloc] initWithEvent:self.event];
-    
+
     XCTAssertTrue([item.dateString isEqualToString:@"Yesterday"]);
     XCTAssertEqual(item.isActive, false);
 }
 
 - (void)testEventInLastMonth {
-    NSDate *eventDate = [self dateByAddingUnit:NSCalendarUnitMonth value:-1 toDate:self.noon];
+    NSDateComponents *februaryTenth = [[NSDateComponents alloc] init];
+    [februaryTenth setMonth:2];
+    [februaryTenth setDay:10];
+    [februaryTenth setYear:self.nowComponents.year];
+    NSDate *referenceDate = [self.calendar dateFromComponents:februaryTenth];
+    NSDate *eventDate = [self dateByAddingUnit:NSCalendarUnitMonth value:-1 toDate:referenceDate];
     self.event.date = eventDate;
     FeedItem *item = [[FeedItem alloc] initWithEvent:self.event];
-    
-    NSDateFormatter *formatter = [NSDateFormatter new];
-    formatter.dateFormat = @"MMM d";
-    NSString *expctedTime = [formatter stringFromDate:eventDate];
-    
+
+    self.formatter.dateFormat = @"MMM d";
+    NSString *expctedTime = [self.formatter stringFromDate:eventDate];
+
+    XCTAssertTrue([item.dateString isEqualToString:expctedTime]);
+    XCTAssertFalse(item.isActive);
+}
+
+- (void)testEventInLastMonthThatIsAlsoLastYear {
+    NSDateComponents *januaryTenth = [[NSDateComponents alloc] init];
+    [januaryTenth setMonth:1];
+    [januaryTenth setDay:10];
+    [januaryTenth setYear:self.nowComponents.year];
+    NSDate *referenceDate = [self.calendar dateFromComponents:januaryTenth];
+    NSDate *eventDate = [self dateByAddingUnit:NSCalendarUnitMonth value:-1 toDate:referenceDate];
+    self.event.date = eventDate;
+    FeedItem *item = [[FeedItem alloc] initWithEvent:self.event];
+
+    self.formatter.dateFormat = @"MMM d, yyyy";
+    NSString *expctedTime = [self.formatter stringFromDate:eventDate];
+
     XCTAssertTrue([item.dateString isEqualToString:expctedTime]);
     XCTAssertFalse(item.isActive);
 }
