@@ -13,7 +13,10 @@
 @interface FeedItemTests : XCTestCase
 
 @property (nonatomic) Event *event;
+@property (nonatomic) NSDate *now;
 @property (nonatomic) NSDate *noon;
+@property (nonatomic) NSDateFormatter *formatter;
+@property (nonatomic) NSCalendar *calendar;
 @end
 
 @implementation FeedItemTests
@@ -40,9 +43,11 @@
                            };
     self.event = [[Event alloc] initWithDictionary:dict];
     self.event.type = EventTypeSFCoffee;
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
-    self.noon = [calendar dateBySettingHour:12 minute:0 second:0 ofDate:[NSDate date] options:0];
+    self.now = [NSDate date];
+    self.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    self.noon = [self.calendar dateBySettingHour:12 minute:0 second:0 ofDate:self.now options:0];
     self.event.date = self.noon;
+    self.formatter = [NSDateFormatter new];
 }
 
 - (void)tearDown {
@@ -88,14 +93,27 @@
 }
 
 - (void)testEventInLastMonth {
-    NSDate *eventDate = [self dateByAddingUnit:NSCalendarUnitMonth value:-1 toDate:self.noon];
+    NSDate *february = [self.calendar dateBySettingUnit:NSCalendarUnitMonth value:2 ofDate:self.now options:0];
+    NSDate *eventDate = [self dateByAddingUnit:NSCalendarUnitMonth value:-1 toDate:february];
     self.event.date = eventDate;
     FeedItem *item = [[FeedItem alloc] initWithEvent:self.event];
+
+    self.formatter.dateFormat = @"MMM d";
+    NSString *expctedTime = [self.formatter stringFromDate:eventDate];
     
-    NSDateFormatter *formatter = [NSDateFormatter new];
-    formatter.dateFormat = @"MMM d";
-    NSString *expctedTime = [formatter stringFromDate:eventDate];
-    
+    XCTAssertTrue([item.dateString isEqualToString:expctedTime]);
+    XCTAssertFalse(item.isActive);
+}
+
+- (void)testEventInLastMonthThatIsAlsoLastYear {
+    NSDate *january = [self.calendar dateBySettingUnit:NSCalendarUnitMonth value:1 ofDate:self.now options:0];
+    NSDate *eventDate = [self dateByAddingUnit:NSCalendarUnitMonth value:-1 toDate:january];
+    self.event.date = eventDate;
+    FeedItem *item = [[FeedItem alloc] initWithEvent:self.event];
+
+    self.formatter.dateFormat = @"MMM d, yyyy";
+    NSString *expctedTime = [self.formatter stringFromDate:eventDate];
+
     XCTAssertTrue([item.dateString isEqualToString:expctedTime]);
     XCTAssertFalse(item.isActive);
 }
